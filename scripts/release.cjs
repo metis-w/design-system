@@ -32,13 +32,15 @@ try {
     console.log('📦 Building project...');
     execSync('npm run build', { stdio: 'inherit' });
     
+    console.log('📝 Don\'t forget to update CHANGELOG.md with new changes!');
     console.log('');
     console.log(`✅ Version bumped to ${newVersion}`);
     console.log('');
     console.log('Next steps:');
-    console.log(`1. Commit changes: git add . && git commit -m "chore: bump version to ${newVersion}"`);
-    console.log('2. Push to main: git push origin main');
-    console.log('3. GitHub Actions will automatically publish to NPM');
+    console.log('1. Update CHANGELOG.md with new changes');
+    console.log(`2. Commit changes: git add . && git commit -m "chore: bump version to ${newVersion}"`);
+    console.log('3. Push to main: git push origin main');
+    console.log('4. GitHub Actions will automatically publish to NPM');
     
 } catch (error) {
     console.error('Error:', error.message);

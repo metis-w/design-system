@@ -40,6 +40,7 @@ echo.
 echo ✅ Version bumped to %NEW_VERSION%
 echo.
 echo Next steps:
-echo 1. Commit changes: git add . ^&^& git commit -m "chore: bump version to %NEW_VERSION%"
-echo 2. Push to main: git push origin main
-echo 3. GitHub Actions will automatically publish to NPM
+echo 1. Update CHANGELOG.md with new changes
+echo 2. Commit changes: git add . ^&^& git commit -m "chore: bump version to %NEW_VERSION%"
+echo 3. Push to main: git push origin main
+echo 4. GitHub Actions will automatically publish to NPM
