@@ -24,10 +24,10 @@
     "scripts": {
         "build": "vite build && tsc --emitDeclarationOnly --outDir dist",
         "dev": "vite build --watch",
+        
         "release:patch": "node scripts/release.cjs patch",
         "release:minor": "node scripts/release.cjs minor",
-        "release:major": "node scripts/release.cjs major",
-        "prepublishOnly": "npm run build"
+        "release:major": "node scripts/release.cjs major"
     },
     "keywords": [
         "design-system",

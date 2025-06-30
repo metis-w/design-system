@@ -4,12 +4,6 @@ Design system library for Metis projects built with React, TypeScript, and Tailw
 
 [![NPM](https://nodei.co/npm/@metis-w/design-system.png)](https://npmjs.com/package/@metis-w/design-system)
 
-## Installation
-
-```bash
-npm install @metis-w/design-system
-```
-
 ## Usage in Next.js
 
 ### 1. Install the library

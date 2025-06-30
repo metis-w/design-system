@@ -35,6 +35,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Tailwind Integration**: Easy setup for Next.js projects
 - **Type Safety**: Full TypeScript support with declarations
 
-[Unreleased]: https://github.com/metis-w/design-system/compare/v1.0.1...HEAD
-[1.0.1]: https://github.com/metis-w/design-system/compare/v1.0.0...v1.0.1
-[1.0.0]: https://github.com/metis-w/design-system/releases/tag/v1.0.0
+--
