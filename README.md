@@ -20,10 +20,10 @@ npm install @metis-w/design-system
 
 ### 2. Import styles in your app
 
-Import the design system styles in your main app file (`_app.tsx` for Next.js):
+Import the design system styles in your main app file (`layout.tsx` for Next.js):
 
 ```tsx
-// In _app.tsx (Next.js) or your main app file
+// In layout.tsx (Next.js) or your main app file
 import '@metis-w/design-system/styles'; // Main styles (base.css)
 
 // Or import specific style modules
