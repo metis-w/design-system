@@ -1,6 +1,6 @@
 {
     "name": "@metis-w/design-system",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Design system library for Metis projects",
     "type": "module",
     "main": "./dist/index.cjs.js",
@@ -21,7 +21,10 @@
     "scripts": {
         "build": "vite build && tsc --emitDeclarationOnly --outDir dist",
         "dev": "vite build --watch",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "release:patch": "node scripts/release.cjs patch",
+        "release:minor": "node scripts/release.cjs minor",
+        "release:major": "node scripts/release.cjs major",
+        "prepublishOnly": "npm run build"
     },
     "keywords": [
         "design-system",

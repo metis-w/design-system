@@ -155,3 +155,7 @@ npm run build
 # Watch mode for development
 npm run dev
 ```
+
+## Release Management
+
+For information about creating releases and version management, see [RELEASE.md](./RELEASE.md).
