@@ -1,6 +1,6 @@
 {
     "name": "@metis-w/design-system",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "Design system library for Metis projects",
     "type": "module",
     "main": "./dist/index.cjs.js",
