@@ -42,7 +42,9 @@ jobs:
           fi
 
   build-and-test:
+    needs: [check-version]
     runs-on: ubuntu-latest
+    if: needs.check-version.outputs.version-changed == 'true'
     steps:
       - uses: actions/checkout@v4
 
