@@ -1,4 +1,4 @@
-# @metis-w/design-system
+# Metis Design System
 
 Design system library for Metis projects built with React, TypeScript, and Tailwind CSS v4.
 
