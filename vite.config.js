@@ -1,36 +1,15 @@
-import react from "@vitejs/plugin-react";
-import tailwindcss from "@tailwindcss/vite";
-
-import { resolve } from "path";
-import { readdirSync } from "fs";
 import { defineConfig } from "vite";
-
-function getStylesEntries() {
-    const stylesDir = resolve(__dirname, "src/styles");
-    const entries = { 
-        index: resolve(__dirname, "src/index.ts")
-    };
-
-    try {
-        readdirSync(stylesDir).forEach((file) => {
-            if (file.endsWith(".css") && file !== "index.css") {
-                const name = file.replace(".css", "");
-                entries[name] = resolve(stylesDir, file);
-            }
-        });
-    } catch (error) {
-        console.warn("Styles directory not found, skipping CSS entries");
-    }
-    return entries;
-}
+import react from "@vitejs/plugin-react";
+import { resolve } from "path";
 
 export default defineConfig({
-    plugins: [react()], // Remove tailwindcss plugin for pure CSS output
+    plugins: [react()],
     build: {
         lib: {
-            entry: getStylesEntries(),
-            name: "metis-design-system",
-            fileName: (format, entryName) => `${entryName}.${format}.js`,
+            entry: resolve(__dirname, "src/index.ts"),
+            name: "@metis-w/design-system",
+            fileName: (format) => `index.${format === "es" ? "js" : "cjs"}`,
+            formats: ["es", "cjs"],
         },
         rollupOptions: {
             external: ["react", "react-dom"],
@@ -41,6 +20,10 @@ export default defineConfig({
                 },
             },
         },
-        cssCodeSplit: true,
+        cssCodeSplit: false,
+        outDir: "dist",
+    },
+    css: {
+        postcss: "./postcss.config.mjs",
     },
 });

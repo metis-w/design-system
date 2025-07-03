@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@theme {
+    /* Brand Colors */
+    --color-primary: #00b894;
+    --color-secondary: #0984e3;
+    --color-accent: #6c5ce7;
+
+    /* Semantic Colors */
+    --color-success: #00b894;
+    --color-warning: #fdcb6e;
+    --color-error: #e17055;
+    --color-info: #74b9ff;
+
+    /* Neutral Colors */
+    --color-gray-50: #f9fafb;
+    --color-gray-100: #f3f4f6;
+    --color-gray-200: #e5e7eb;
+    --color-gray-300: #d1d5db;
+    --color-gray-400: #9ca3af;
+    --color-gray-500: #6b7280;
+    --color-gray-600: #4b5563;
+    --color-gray-700: #374151;
+    --color-gray-800: #1f2937;
+    --color-gray-900: #111827;
+
+    /* Typography */
+    /* ui */
+    --text-ui-label-base: 0.875rem;
+    --leading-ui-label-base: 1.25rem;
+
+    /* marketing */
+    --text-mark-h1: 2.75rem;
+    --leading-mark-h1: 3.25rem;
+
+    --text-mark-h2: 2.5rem;
+    --leading-mark-h2: 3rem;
+
+    --text-mark-h3: 2rem;
+    --leading-mark-h3: 2.5rem;
+
+    --text-mark-h4: 1.75rem;
+    --leading-mark-h4: 2.25rem;
+
+    --text-mark-h5: 1.5rem;
+    --leading-mark-h5: 2rem;
+
+    --text-mark-h6: 1.25rem;
+    --leading-mark-h6: 1.75rem;
+
+    --text-mark-body-lg: 1.125rem;
+    --leading-mark-body-lg: 1.75rem;
+
+    --text-mark-body-base: 1rem;
+    --leading-mark-body-base: 1.5rem;
+
+    --text-mark-label-base: 1rem;
+    --leading-mark-label-base: 1.5rem;
+
+    --text-mark-caption: 0.75rem;
+    --leading-mark-caption: 1.5rem;
+}
