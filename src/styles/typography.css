@@ -1,7 +1,4 @@
-@import "tailwindcss";
-@import "tw-animate-css";
-
-@layer theme, utilities, components;
+/* Typography styles - no need to import Tailwind here */
 
 @layer theme {
     @theme {

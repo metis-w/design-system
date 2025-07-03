@@ -7,6 +7,5 @@ export type { ButtonProps } from "./components/test-button";
 // Export utilities
 export { cn } from "./lib/utils";
 
-// Export styles
-import "./styles/base.css";
-import "./styles/typography.css";
+// Note: Styles are not auto-imported
+// Users should manually import them in their Next.js project
