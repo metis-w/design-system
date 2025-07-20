@@ -5,7 +5,7 @@ A simple, responsive, and scalable design system built with Tailwind CSS. This M
 ## Installation
 
 ```bash
-npm install your-design-system
+npm install @metis-w/design-system
 ```
 
 ## Quick Start
@@ -13,13 +13,13 @@ npm install your-design-system
 Import the design system in your main CSS file:
 
 ```css
-@import "your-design-system";
+@import "@metis-w/design-system";
 ```
 
 Or import the individual CSS file:
 
 ```css
-@import "your-design-system/index.css";
+@import "@metis-w/design-system/index.css";
 ```
 
 ## What's Included

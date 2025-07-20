@@ -1,8 +1,6 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-@custom-variant dark (&:is(.dark *));
-
 @theme {
     /* Colours: Primitive */
     --color-black: #000000;
@@ -186,6 +184,10 @@
     --color-text-arev-disabled: var(--color-blue-400);
     --color-border-arev: var(--color-blue-300);
     --color-border-arev-disabled: var(--color-blue-100);
+
+    /* Popover */
+    --color-popover: var(--color-white);
+    --color-popover-foreground: var(--color-neutral-950);
 
     /* Typography: Primitive */
     --text-ui-title-lg: 2rem;

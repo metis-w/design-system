@@ -1,25 +1,26 @@
 import type { StorybookConfig } from "@storybook/react-vite";
+import { resolve } from "path";
 
 const config: StorybookConfig = {
-    stories: ["../src/**/*.stories.@(js|jsx|ts|tsx|mdx)"],
-    addons: [
-        "@storybook/addon-essentials",
-        "@storybook/addon-interactions",
-        "@storybook/addon-docs",
-    ],
+    stories: ["../src/**/*.mdx", "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)"],
+    addons: ["@storybook/addon-docs"],
     framework: {
         name: "@storybook/react-vite",
         options: {},
     },
-    viteFinal: (config) => {
-        // Ensure Storybook can resolve your path aliases
+    async viteFinal(config) {
+        // Add alias support
         config.resolve = config.resolve || {};
         config.resolve.alias = {
             ...config.resolve.alias,
-            "@": "/src",
+            "@": resolve(process.cwd(), "src"),
         };
+
+        // Add PostCSS support
+        config.css = config.css || {};
+        config.css.postcss = resolve(process.cwd(), "postcss.config.js");
+
         return config;
     },
 };
-
 export default config;
