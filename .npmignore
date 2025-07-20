@@ -1,0 +1,50 @@
+# Source files (only ship compiled dist)
+src/
+public/
+
+# Development and build tools
+.storybook/
+storybook-static/
+node_modules/
+.env*
+.DS_Store
+
+# Development configs
+vite.config.ts
+tsconfig.json
+tsconfig.node.json
+.eslintrc*
+.prettierrc*
+.gitignore
+
+# Documentation and project files
+README.md
+*.md
+docs/
+
+# Test files
+**/*.test.*
+**/*.spec.*
+__tests__/
+coverage/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs and temp files
+*.log
+.cache/
+.temp/
+.tmp/
+
+# Git
+.git/
+.gitattributes
+
+# CI/CD
+.github/
+.gitlab-ci.yml
+.travis.yml
