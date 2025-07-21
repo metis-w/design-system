@@ -21,11 +21,12 @@ export const AllTypography: Story = {
                 </h2>
                 <div className="space-y-3">
                     <div>
-                        <h1 className="text-ui-title-lg text-text-pr">
+                        <h1 className="typo-ui-title-lg text-text-pr">
                             Title Large (2rem / 32px)
                         </h1>
                         <p className="text-ui-body-sm text-text-ter mt-1">
-                            .text-ui-title-lg - font-size: 2rem, line-height: 2.5rem, font-weight: 600
+                            .text-ui-title-lg - font-size: 2rem, line-height:
+                            2.5rem, font-weight: 600
                         </p>
                     </div>
                     <div>
@@ -33,7 +34,8 @@ export const AllTypography: Story = {
                             Title Base (1.5rem / 24px)
                         </h2>
                         <p className="text-ui-body-sm text-text-ter mt-1">
-                            .text-ui-title-base - font-size: 1.5rem, line-height: 2rem, font-weight: 600
+                            .text-ui-title-base - font-size: 1.5rem,
+                            line-height: 2rem, font-weight: 600
                         </p>
                     </div>
                     <div>
@@ -41,7 +43,8 @@ export const AllTypography: Story = {
                             Title Small (1.25rem / 20px)
                         </h3>
                         <p className="text-ui-body-sm text-text-ter mt-1">
-                            .text-ui-title-sm - font-size: 1.25rem, line-height: 1.75rem, font-weight: 600
+                            .text-ui-title-sm - font-size: 1.25rem, line-height:
+                            1.75rem, font-weight: 600
                         </p>
                     </div>
                 </div>
@@ -57,7 +60,8 @@ export const AllTypography: Story = {
                         Subtitle (1.25rem / 20px)
                     </h4>
                     <p className="text-ui-body-sm text-text-ter mt-1">
-                        .text-ui-subtitle - font-size: 1.25rem, line-height: 1.75rem, font-weight: 500
+                        .text-ui-subtitle - font-size: 1.25rem, line-height:
+                        1.75rem, font-weight: 500
                     </p>
                 </div>
             </div>
@@ -70,26 +74,35 @@ export const AllTypography: Story = {
                 <div className="space-y-3">
                     <div>
                         <p className="text-ui-body-lg text-text-pr">
-                            Body Large (1.125rem / 18px) - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Body Large (1.125rem / 18px) - Lorem ipsum dolor sit
+                            amet, consectetur adipiscing elit. Sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.
                         </p>
                         <p className="text-ui-body-sm text-text-ter mt-1">
-                            .text-ui-body-lg - font-size: 1.125rem, line-height: 1.75rem, font-weight: 400
+                            .text-ui-body-lg - font-size: 1.125rem, line-height:
+                            1.75rem, font-weight: 400
                         </p>
                     </div>
                     <div>
                         <p className="text-ui-body-base text-text-pr">
-                            Body Base (1rem / 16px) - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Body Base (1rem / 16px) - Lorem ipsum dolor sit
+                            amet, consectetur adipiscing elit. Sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.
                         </p>
                         <p className="text-ui-body-sm text-text-ter mt-1">
-                            .text-ui-body-base - font-size: 1rem, line-height: 1.5rem, font-weight: 400
+                            .text-ui-body-base - font-size: 1rem, line-height:
+                            1.5rem, font-weight: 400
                         </p>
                     </div>
                     <div>
                         <p className="text-ui-body-sm text-text-pr">
-                            Body Small (0.875rem / 14px) - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Body Small (0.875rem / 14px) - Lorem ipsum dolor sit
+                            amet, consectetur adipiscing elit. Sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.
                         </p>
                         <p className="text-ui-body-sm text-text-ter mt-1">
-                            .text-ui-body-sm - font-size: 0.875rem, line-height: 1.25rem, font-weight: 400
+                            .text-ui-body-sm - font-size: 0.875rem, line-height:
+                            1.25rem, font-weight: 400
                         </p>
                     </div>
                 </div>
@@ -106,7 +119,8 @@ export const AllTypography: Story = {
                             Label Large (1rem / 16px)
                         </span>
                         <p className="text-ui-body-sm text-text-ter mt-1">
-                            .text-ui-label-lg - font-size: 1rem, line-height: 1.5rem, font-weight: 500
+                            .text-ui-label-lg - font-size: 1rem, line-height:
+                            1.5rem, font-weight: 500
                         </p>
                     </div>
                     <div>
@@ -114,7 +128,8 @@ export const AllTypography: Story = {
                             Label Base (0.875rem / 14px)
                         </span>
                         <p className="text-ui-body-sm text-text-ter mt-1">
-                            .text-ui-label-base - font-size: 0.875rem, line-height: 1.25rem, font-weight: 500
+                            .text-ui-label-base - font-size: 0.875rem,
+                            line-height: 1.25rem, font-weight: 500
                         </p>
                     </div>
                     <div>
@@ -122,7 +137,8 @@ export const AllTypography: Story = {
                             Label Small (0.75rem / 12px)
                         </span>
                         <p className="text-ui-body-sm text-text-ter mt-1">
-                            .text-ui-label-sm - font-size: 0.75rem, line-height: 1rem, font-weight: 500
+                            .text-ui-label-sm - font-size: 0.75rem, line-height:
+                            1rem, font-weight: 500
                         </p>
                     </div>
                 </div>
@@ -187,17 +203,21 @@ export const Hierarchy: Story = {
                 <h1 className="text-ui-title-lg text-text-pr mb-4">
                     Design System Typography
                 </h1>
-                
+
                 <p className="text-ui-body-lg text-text-pr mb-6">
-                    This is an example of how our typography system works together to create a clear information hierarchy. This large body text serves as an introduction or lead paragraph.
+                    This is an example of how our typography system works
+                    together to create a clear information hierarchy. This large
+                    body text serves as an introduction or lead paragraph.
                 </p>
 
                 <h2 className="text-ui-title-base text-text-pr mb-3">
                     Main Section Heading
                 </h2>
-                
+
                 <p className="text-ui-body-base text-text-pr mb-4">
-                    This is regular body text that makes up the main content. It's readable and comfortable for extended reading. The line height and spacing create good readability.
+                    This is regular body text that makes up the main content.
+                    It's readable and comfortable for extended reading. The line
+                    height and spacing create good readability.
                 </p>
 
                 <h3 className="text-ui-title-sm text-text-pr mb-3">
@@ -205,7 +225,8 @@ export const Hierarchy: Story = {
                 </h3>
 
                 <p className="text-ui-body-base text-text-pr mb-3">
-                    More body content continues here. Notice how the hierarchy guides the eye through the content structure.
+                    More body content continues here. Notice how the hierarchy
+                    guides the eye through the content structure.
                 </p>
 
                 <h4 className="text-ui-subtitle text-text-pr mb-2">
@@ -213,13 +234,17 @@ export const Hierarchy: Story = {
                 </h4>
 
                 <p className="text-ui-body-sm text-text-sec mb-4">
-                    Smaller text in secondary color can be used for less important information, captions, or supporting details.
+                    Smaller text in secondary color can be used for less
+                    important information, captions, or supporting details.
                 </p>
 
                 <div className="bg-surf-sec p-4 rounded-lg">
-                    <span className="text-ui-label-base text-text-pr font-medium">Label:</span>
+                    <span className="text-ui-label-base text-text-pr font-medium">
+                        Label:
+                    </span>
                     <span className="text-ui-body-sm text-text-ter ml-2">
-                        This shows how labels and small text work together in components.
+                        This shows how labels and small text work together in
+                        components.
                     </span>
                 </div>
             </article>
@@ -238,14 +263,15 @@ export const ResponsiveText: Story = {
                     Resize your browser window to see how the typography scales
                 </p>
             </div>
-            
+
             <div className="grid gap-6 md:gap-8">
                 <div className="bg-surf-sec p-4 rounded-lg">
                     <h3 className="text-ui-title-base md:text-ui-title-lg text-text-pr mb-2">
                         Responsive Heading
                     </h3>
                     <p className="text-ui-body-sm md:text-ui-body-base text-text-sec">
-                        This text changes size based on screen size. On mobile it's smaller, on desktop it's larger.
+                        This text changes size based on screen size. On mobile
+                        it's smaller, on desktop it's larger.
                     </p>
                 </div>
 
@@ -258,7 +284,8 @@ export const ResponsiveText: Story = {
                             Card Title
                         </h4>
                         <p className="text-ui-body-sm text-text-sec">
-                            Card description with smaller text that provides additional context.
+                            Card description with smaller text that provides
+                            additional context.
                         </p>
                     </div>
 
@@ -270,7 +297,8 @@ export const ResponsiveText: Story = {
                             Another Card
                         </h4>
                         <p className="text-ui-body-sm text-text-sec">
-                            Consistent spacing and typography creates visual harmony.
+                            Consistent spacing and typography creates visual
+                            harmony.
                         </p>
                     </div>
                 </div>
