@@ -5,7 +5,7 @@ import { Google } from "./google";
 import { Button } from "../atoms/button";
 
 const meta = {
-    title: "Components/Icons",
+    title: "Design System/Icons",
     parameters: {
         layout: "centered",
     },
