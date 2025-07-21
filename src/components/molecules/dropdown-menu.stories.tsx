@@ -283,7 +283,7 @@ export const UserAccountMenu: Story = {
             <DropdownMenuTrigger asChild>
                 <button className="flex items-center h-[36px] gap-2 rounded-lg border border-border-asec bg-bg-asec pr-3 py-0 transition-colors hover:bg-bg-asec-hover focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
                     <Avatar className="h-full w-auto aspect-square">
-                        <AvatarFallback className="bg-gradient-to-br from-purple-400 to-purple-600 text-white rounded-l-lg rounded-r-none">
+                        <AvatarFallback>
                             JD
                         </AvatarFallback>
                     </Avatar>
