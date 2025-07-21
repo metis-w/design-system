@@ -5,7 +5,7 @@ import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
 const buttonVariants = cva(
-    "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg text-label-base shadow-xs transition-all hover:shadow-none focus-visible:shadow-none disabled:pointer-events-none[&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none",
+    "inline-flex items-center text-ui-title-lg justify-center gap-2 whitespace-nowrap rounded-lg shadow-xs transition-all hover:shadow-none focus-visible:shadow-none disabled:pointer-events-none[&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none",
     {
         variants: {
             variant: {
@@ -14,7 +14,7 @@ const buttonVariants = cva(
                     "bg-bg-apr text-text-apr border border-border-apr hover:bg-bg-apr-hover focus-visible:bg-bg-apr-pressed disabled:bg-bg-apr-disabled disabled:text-text-apr-disabled disabled:border-border-apr-disabled",
                 secondary:
                     "bg-bg-asec text-text-asec border border-border-asec hover:bg-bg-asec-hover focus-visible:bg-bg-asec-pressed disabled:bg-bg-asec-disabled disabled:text-text-asec-disabled disabled:border-border-asec-disabled",
-                ghost: "text-text-agh hover:bg-bg-agh-hover focus-visible:bg-bg-agh-pressed disabled:text-text-agh-disabled",
+                ghost: "shadow-none text-text-agh hover:bg-bg-agh-hover focus-visible:bg-bg-agh-pressed disabled:text-text-agh-disabled",
                 mistake:
                     "bg-bg-amist text-text-amist border border-border-amist hover:bg-bg-amist-hover focus-visible:bg-bg-amist-pressed disabled:bg-bg-amist-disabled disabled:text-text-amist-disabled disabled:border-border-amist-disabled",
                 success:
