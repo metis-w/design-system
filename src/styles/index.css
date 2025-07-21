@@ -223,7 +223,7 @@
 
 @layer utilities {
     /* Typography: Semantic */
-    .text-ui-title-lg {
+    .typo-ui-title-lg {
         font-size: var(--text-ui-title-lg);
         line-height: var(--leading-ui-title-lg);
         font-weight: 600;
@@ -271,7 +271,7 @@
         font-weight: 500;
     }
 
-    .text-ui-label-base {
+    .typo-ui-label-base {
         font-size: var(--text-ui-label-base);
         line-height: var(--leading-ui-label-base);
         font-weight: 500;
