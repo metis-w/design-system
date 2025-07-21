@@ -2,10 +2,10 @@ import type { Meta, StoryObj } from "@storybook/react";
 import { Logo } from "./logo";
 import { LogoExt } from "./logo-ext";
 import { Google } from "./google";
-import { Button } from "../atoms/button";
+import { Button } from "../../components/atoms/button";
 
 const meta = {
-    title: "Design System/Icons",
+    title: "Foundations/Icons",
     parameters: {
         layout: "centered",
     },

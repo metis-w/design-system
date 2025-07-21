@@ -1,9 +1,9 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { Textarea } from "./textarea";
+import { TextArea } from ".";
 
 const meta = {
-    title: "Components/Atoms/Textarea",
-    component: Textarea,
+    title: "Components/Atoms/TextArea",
+    component: TextArea,
     parameters: {
         layout: "centered",
     },
@@ -19,7 +19,7 @@ const meta = {
             control: { type: "number" },
         },
     },
-} satisfies Meta<typeof Textarea>;
+} satisfies Meta<typeof TextArea>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
@@ -88,7 +88,7 @@ export const Form: Story = {
                 <label className="text-ui-label-base text-text-inp-label">
                     Message *
                 </label>
-                <Textarea
+                <TextArea
                     placeholder="Please describe your issue..."
                     rows={4}
                     required
@@ -101,7 +101,7 @@ export const Form: Story = {
                 <label className="text-ui-label-base text-text-inp-label">
                     Additional Comments
                 </label>
-                <Textarea
+                <TextArea
                     placeholder="Any additional information (optional)..."
                     rows={3}
                 />
@@ -117,19 +117,19 @@ export const Sizes: Story = {
                 <h3 className="text-ui-label-base text-text-pr">
                     Small (2 rows)
                 </h3>
-                <Textarea placeholder="Small textarea..." rows={2} />
+                <TextArea placeholder="Small textarea..." rows={2} />
             </div>
             <div className="space-y-2">
                 <h3 className="text-ui-label-base text-text-pr">
                     Medium (4 rows)
                 </h3>
-                <Textarea placeholder="Medium textarea..." rows={4} />
+                <TextArea placeholder="Medium textarea..." rows={4} />
             </div>
             <div className="space-y-2">
                 <h3 className="text-ui-label-base text-text-pr">
                     Large (8 rows)
                 </h3>
-                <Textarea placeholder="Large textarea..." rows={8} />
+                <TextArea placeholder="Large textarea..." rows={8} />
             </div>
         </div>
     ),

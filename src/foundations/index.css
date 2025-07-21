@@ -229,43 +229,43 @@
         font-weight: 600;
     }
 
-    .text-ui-title-base {
+    .typo-ui-title-base {
         font-size: var(--text-ui-title-base);
         line-height: var(--leading-ui-title-base);
         font-weight: 600;
     }
 
-    .text-ui-title-sm {
+    .typo-ui-title-sm {
         font-size: var(--text-ui-title-sm);
         line-height: var(--leading-ui-title-sm);
         font-weight: 600;
     }
 
-    .text-ui-subtitle {
+    .typo-ui-subtitle {
         font-size: var(--text-ui-subtitle);
         line-height: var(--leading-ui-subtitle);
         font-weight: 500;
     }
 
-    .text-ui-body-lg {
+    .typo-ui-body-lg {
         font-size: var(--text-ui-body-lg);
         line-height: var(--leading-ui-body-lg);
         font-weight: 400;
     }
 
-    .text-ui-body-base {
+    .typo-ui-body-base {
         font-size: var(--text-ui-body-base);
         line-height: var(--leading-ui-body-base);
         font-weight: 400;
     }
 
-    .text-ui-body-sm {
+    .typo-ui-body-sm {
         font-size: var(--text-ui-body-sm);
         line-height: var(--leading-ui-body-sm);
         font-weight: 400;
     }
 
-    .text-ui-label-lg {
+    .typo-ui-label-lg {
         font-size: var(--text-ui-label-lg);
         line-height: var(--leading-ui-label-lg);
         font-weight: 500;
@@ -277,7 +277,7 @@
         font-weight: 500;
     }
 
-    .text-ui-label-sm {
+    .typo-ui-label-sm {
         font-size: var(--text-ui-label-sm);
         line-height: var(--leading-ui-label-sm);
         font-weight: 500;

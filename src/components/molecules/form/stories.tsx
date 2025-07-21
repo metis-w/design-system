@@ -11,11 +11,11 @@ import {
     FormItem,
     FormLabel,
     FormMessage,
-} from "./form";
-import { Input } from "../atoms/input";
-import { Button } from "../atoms/button";
-import { Textarea } from "../atoms/textarea";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "../atoms/select";
+} from ".";
+import { Input } from "../../atoms/input";
+import { Button } from "../../atoms/button";
+import { TextArea } from "../../atoms/text-area";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "../../atoms/select";
 
 const meta = {
     title: "Components/Molecules/Form",
@@ -154,7 +154,7 @@ export const WithTextarea: Story = {
                                 <FormItem>
                                     <FormLabel>Bio</FormLabel>
                                     <FormControl>
-                                        <Textarea
+                                        <TextArea
                                             placeholder="Tell us about yourself..."
                                             {...field}
                                         />
@@ -311,7 +311,7 @@ export const WithErrors: Story = {
                                 <FormItem>
                                     <FormLabel>Bio</FormLabel>
                                     <FormControl>
-                                        <Textarea placeholder="Tell us about yourself..." {...field} />
+                                        <TextArea placeholder="Tell us about yourself..." {...field} />
                                     </FormControl>
                                     <FormDescription>
                                         Write a short bio about yourself.

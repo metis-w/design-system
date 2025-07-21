@@ -8,7 +8,7 @@ import {
     SelectLabel,
     SelectSeparator,
     SelectGroup,
-} from "./select";
+} from ".";
 
 const meta = {
     title: "Components/Atoms/Select",

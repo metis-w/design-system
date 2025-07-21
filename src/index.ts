@@ -1,8 +1,8 @@
 // Export all components
 export * from "./components";
 
+// Export all foundations
+export * from "./foundations";
+
 // Export utils
 export { cn } from "./lib/utils";
-
-// Export styles (this will be handled by the build process)
-import './styles/index.css';

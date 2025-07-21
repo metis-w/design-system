@@ -14,9 +14,9 @@ import {
     DropdownMenuSubTrigger,
     DropdownMenuShortcut,
     DropdownMenuGroup,
-} from "./dropdown-menu";
-import { Button } from "../atoms/button";
-import { Avatar, AvatarFallback } from "../atoms/avatar";
+} from ".";
+import { Button } from "../../atoms/button";
+import { Avatar, AvatarFallback } from "../../atoms/avatar";
 import {
     User,
     Settings,

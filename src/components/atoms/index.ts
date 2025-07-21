@@ -6,4 +6,6 @@ export * from "./avatar";
 export * from "./select";
 export * from "./loader";
 export * from "./skeleton";
-export * from "./textarea";
+export * from "./text-area";
+export * from "./progress";
+export * from "./icon-button";

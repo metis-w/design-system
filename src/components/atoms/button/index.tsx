@@ -5,7 +5,7 @@ import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
 const buttonVariants = cva(
-    "inline-flex items-center typo-ui-title-lg justify-center gap-2 whitespace-nowrap rounded-lg shadow-xs transition-all hover:shadow-none focus-visible:shadow-none disabled:pointer-events-none[&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none",
+    "inline-flex items-center !typo-ui-label-base justify-center gap-2 whitespace-nowrap rounded-lg shadow-xs transition-all hover:shadow-none focus-visible:shadow-none disabled:pointer-events-none[&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none",
     {
         variants: {
             variant: {
@@ -22,7 +22,7 @@ const buttonVariants = cva(
                 review: "bg-bg-arev text-text-arev border border-border-arev hover:bg-bg-arev-hover focus-visible:bg-bg-arev-pressed disabled:bg-bg-arev-disabled disabled:text-text-arev-disabled disabled:border-border-arev-disabled",
             },
             size: {
-                default: "h-9 px-3 py-2 has-[>svg]:px-3",
+                default: "px-3 py-2 has-[>svg]:px-3 min-h-[2.25rem]",
             },
         },
         defaultVariants: {
