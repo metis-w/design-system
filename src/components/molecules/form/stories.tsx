@@ -105,7 +105,7 @@ export const Default: Story = {
                                 <FormItem>
                                     <FormLabel>Password</FormLabel>
                                     <FormControl>
-                                        <Input type="password" placeholder="Enter your password" {...field} />
+                                        <Input type="password" showPasswordToggle placeholder="Enter your password" {...field} />
                                     </FormControl>
                                     <FormDescription>
                                         Password must be at least 8 characters long.

@@ -19,6 +19,9 @@ const meta = {
         disabled: {
             control: { type: "boolean" },
         },
+        showPasswordToggle: {
+            control: { type: "boolean" },
+        },
     },
 } satisfies Meta<typeof Input>;
 
@@ -45,6 +48,15 @@ export const Password: Story = {
     },
 };
 
+export const PasswordWithToggle: Story = {
+    args: {
+        type: "password",
+        placeholder: "Enter your password...",
+        showPasswordToggle: true,
+        defaultValue: "secretpassword123",
+    },
+};
+
 export const WithValue: Story = {
     args: {
         placeholder: "Enter text...",
@@ -65,4 +77,66 @@ export const DisabledWithValue: Story = {
         defaultValue: "Disabled with value",
         disabled: true,
     },
+};
+
+export const PasswordExamples: Story = {
+    render: () => (
+        <div className="space-y-4 w-80">
+            <div className="space-y-2">
+                <h3 className="typo-ui-title-sm text-text-pr">Password Input Examples</h3>
+                <p className="typo-ui-body-sm text-text-sec">
+                    Different password input configurations
+                </p>
+            </div>
+            
+            <div className="space-y-4">
+                <div className="space-y-2">
+                    <label className="typo-ui-label-base text-text-inp-label">
+                        Regular Password Input
+                    </label>
+                    <Input
+                        type="password"
+                        placeholder="Enter password..."
+                        defaultValue="secretpassword"
+                    />
+                </div>
+
+                <div className="space-y-2">
+                    <label className="typo-ui-label-base text-text-inp-label">
+                        Password with Toggle
+                    </label>
+                    <Input
+                        type="password"
+                        placeholder="Enter password..."
+                        showPasswordToggle
+                        defaultValue="secretpassword"
+                    />
+                </div>
+
+                <div className="space-y-2">
+                    <label className="typo-ui-label-base text-text-inp-label">
+                        Empty Password with Toggle
+                    </label>
+                    <Input
+                        type="password"
+                        placeholder="Enter password..."
+                        showPasswordToggle={true}
+                    />
+                </div>
+
+                <div className="space-y-2">
+                    <label className="typo-ui-label-base text-text-inp-label">
+                        Disabled Password with Toggle
+                    </label>
+                    <Input
+                        type="password"
+                        placeholder="Enter password..."
+                        showPasswordToggle={true}
+                        defaultValue="secretpassword"
+                        disabled
+                    />
+                </div>
+            </div>
+        </div>
+    ),
 };
