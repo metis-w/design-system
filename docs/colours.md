@@ -146,14 +146,16 @@ Button and interactive element colours:
 **Usage:**
 
 ```html
-<button class="bg-aa text-text-aa hover:bg-aa-hover">Primary Button</button>
+<button class="bg-bg-aa text-text-aa hover:bg-bg-aa-hover">
+    Primary Button
+</button>
 <button class="bg-asec text-text-asec hover:bg-asec-hover">
     Secondary Button
 </button>
-<button class="bg-asuc text-text-asuc hover:bg-asuc-hover">
+<button class="bg-bg-asuc text-text-asuc hover:bg-bg-asuc-hover">
     Success Button
 </button>
-<button class="bg-amist text-text-amist hover:bg-amist-hover">
+<button class="bg-bg-amist text-text-amist hover:bg-bg-amist-hover">
     Delete Button
 </button>
 ```
@@ -174,8 +176,10 @@ Form input styling:
 **Usage:**
 
 ```html
-<input class="bg-inp border border-inp focus:border-inp-focus" />
-<input class="bg-inp-mistake border border-inp-mistake" />
+<input
+    class="bg-bg-inp border border-border-inp focus:border-border-inp-focus"
+/>
+<input class="bg-bg-inp-mistake border border-border-inp-mistake" />
 ```
 
 ## Progress Colours
