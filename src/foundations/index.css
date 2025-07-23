@@ -6,6 +6,29 @@
     --color-black: #000000;
     --color-white: #ffffff;
 
+    --color-neutral-50: #fafafa;
+    --color-neutral-100: #f5f5f5;
+    --color-neutral-200: #e5e5e5;
+    --color-neutral-300: #d4d4d4;
+    --color-neutral-400: #a3a3a3;
+    --color-neutral-500: #737373;
+    --color-neutral-600: #525252;
+    --color-neutral-700: #404040;
+    --color-neutral-800: #262626;
+    --color-neutral-900: #171717;
+
+    --color-yellow-50: #fffff6;
+    --color-yellow-100: #fffecc;
+    --color-yellow-200: #fff799;
+    --color-yellow-300: #fff94d;
+    --color-yellow-400: #fffb26;
+    --color-yellow-500: #ffff00;
+    --color-yellow-600: #e6e600;
+    --color-yellow-700: #bfbf00;
+    --color-yellow-800: #999900;
+    --color-yellow-900: #666600;
+    --color-yellow-950: #333300;
+
     --color-purple-50: #faf5ff;
     --color-purple-100: #f3e8ff;
     --color-purple-200: #e9d5ff;
@@ -30,18 +53,6 @@
     --color-red-900: #7f1d1d;
     --color-red-950: #450a0a;
 
-    --color-blue-50: #eff6ff;
-    --color-blue-100: #dbeafe;
-    --color-blue-200: #bfdbfe;
-    --color-blue-300: #93c5fd;
-    --color-blue-400: #60a5fa;
-    --color-blue-500: #3b82f6;
-    --color-blue-600: #2563eb;
-    --color-blue-700: #1d4ed8;
-    --color-blue-800: #1e40af;
-    --color-blue-900: #1e3a8a;
-    --color-blue-950: #172554;
-
     --color-green-50: #f0fdf4;
     --color-green-100: #dcfce7;
     --color-green-200: #bbf7d0;
@@ -54,28 +65,17 @@
     --color-green-900: #14532d;
     --color-green-950: #052e16;
 
-    --color-yellow-50: #fffff6;
-    --color-yellow-100: #fffecc;
-    --color-yellow-200: #fff799;
-    --color-yellow-300: #fff94d;
-    --color-yellow-400: #fffb26;
-    --color-yellow-500: #ffff00;
-    --color-yellow-600: #e6e600;
-    --color-yellow-700: #bfbf00;
-    --color-yellow-800: #999900;
-    --color-yellow-900: #666600;
-    --color-yellow-950: #333300;
-
-    --color-neutral-50: #fafafa;
-    --color-neutral-100: #f5f5f5;
-    --color-neutral-200: #e5e5e5;
-    --color-neutral-300: #d4d4d4;
-    --color-neutral-400: #a3a3a3;
-    --color-neutral-500: #737373;
-    --color-neutral-600: #525252;
-    --color-neutral-700: #404040;
-    --color-neutral-800: #262626;
-    --color-neutral-900: #171717;
+    --color-blue-50: #eff6ff;
+    --color-blue-100: #dbeafe;
+    --color-blue-200: #bfdbfe;
+    --color-blue-300: #93c5fd;
+    --color-blue-400: #60a5fa;
+    --color-blue-500: #3b82f6;
+    --color-blue-600: #2563eb;
+    --color-blue-700: #1d4ed8;
+    --color-blue-800: #1e40af;
+    --color-blue-900: #1e3a8a;
+    --color-blue-950: #172554;
 
     /* Colours: Semantic */
     /* Surface (surf) */
@@ -104,31 +104,6 @@
     --color-border-default: var(--color-neutral-200);
     --color-border-ident: var(--color-purple-300);
     --color-border-a: var(--color-yellow-200);
-
-    /* Progress */
-    --color-bg-track: var(--color-neutral-100);
-    --color-bg-fill: var(--color-green-500);
-
-    /* Input (inp) */
-    --color-bg-inp: var(--color-white);
-    --color-bg-inp-mistake: var(--color-red-50);
-    --color-bg-inp-disabled: var(--color-neutral-50);
-    --color-bg-inp-readonly: var(--color-neutral-50);
-    --color-text-inp: var(--color-neutral-500);
-    --color-text-inp-label: var(--color-neutral-900);
-    --color-text-inp-caption: var(--color-neutral-600);
-    --color-text-inp-filled: var(--color-neutral-900);
-    --color-text-inp-mistake: var(--color-red-500);
-    --color-text-inp-disabled: var(--color-neutral-400);
-    --color-text-inp-readonly: var(--color-neutral-900);
-    --color-text-inp-label-disabled: var(--color-neutral-600);
-    --color-text-inp-caption-disabled: var(--color-neutral-500);
-    --color-border-inp: var(--color-neutral-200);
-    --color-border-inp-focus: var(--color-neutral-400);
-    --color-border-inp-mistake: var(--color-red-500);
-    --color-border-inp-readonly: var(--color-neutral-200);
-    --color-ring-inp-focus: rgba(82, 82, 82, 0.2);
-    --color-ring-inp-mistake: rgba(220, 38, 38, 0.2);
 
     /* Action (a) */
     --color-bg-aa: var(--color-yellow-500);
@@ -184,6 +159,31 @@
     --color-text-arev-disabled: var(--color-blue-400);
     --color-border-arev: var(--color-blue-300);
     --color-border-arev-disabled: var(--color-blue-100);
+
+    /* Input (inp) */
+    --color-bg-inp: var(--color-white);
+    --color-bg-inp-mistake: var(--color-red-50);
+    --color-bg-inp-disabled: var(--color-neutral-50);
+    --color-bg-inp-readonly: var(--color-neutral-50);
+    --color-text-inp: var(--color-neutral-500);
+    --color-text-inp-label: var(--color-neutral-900);
+    --color-text-inp-caption: var(--color-neutral-600);
+    --color-text-inp-filled: var(--color-neutral-900);
+    --color-text-inp-mistake: var(--color-red-500);
+    --color-text-inp-disabled: var(--color-neutral-400);
+    --color-text-inp-readonly: var(--color-neutral-900);
+    --color-text-inp-label-disabled: var(--color-neutral-600);
+    --color-text-inp-caption-disabled: var(--color-neutral-500);
+    --color-border-inp: var(--color-neutral-200);
+    --color-border-inp-focus: var(--color-neutral-400);
+    --color-border-inp-mistake: var(--color-red-500);
+    --color-border-inp-readonly: var(--color-neutral-200);
+    --color-ring-inp-focus: rgba(82, 82, 82, 0.2);
+    --color-ring-inp-mistake: rgba(220, 38, 38, 0.2);
+
+    /* Progress */
+    --color-bg-track: var(--color-neutral-100);
+    --color-bg-fill: var(--color-green-500);
 
     /* Popover */
     --color-popover: var(--color-white);
