@@ -19,21 +19,6 @@ const inputVariants = cva(
     }
 );
 
-/**
- * Input component with optional password visibility toggle.
- * 
- * @example
- * ```tsx
- * // Basic input
- * <Input placeholder="Enter text" />
- * 
- * // Password input with toggle
- * <Input type="password" showPasswordToggle placeholder="Enter password" />
- * 
- * // Disabled input
- * <Input disabled placeholder="Disabled input" />
- * ```
- */
 function Input({
     className,
     type,
@@ -43,11 +28,15 @@ function Input({
     const [showPassword, setShowPassword] = React.useState(false);
     const shouldShowToggle = type === "password" && showPasswordToggle;
 
-    const inputType = shouldShowToggle ? (showPassword ? "text" : "password") : type;
+    const inputType = shouldShowToggle
+        ? showPassword
+            ? "text"
+            : "password"
+        : type;
 
     const handleToggleVisibility = (e: React.MouseEvent<HTMLButtonElement>) => {
         e.preventDefault();
-        setShowPassword(prev => !prev);
+        setShowPassword((prev) => !prev);
     };
 
     if (!shouldShowToggle) {
