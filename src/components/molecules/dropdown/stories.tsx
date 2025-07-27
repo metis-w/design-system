@@ -29,8 +29,8 @@ import {
     Github,
     LifeBuoy,
     Cloud,
-    Keyboard,
     ChevronDown,
+    MessageCircleHeart,
 } from "lucide-react";
 import { useState } from "react";
 
@@ -281,54 +281,32 @@ export const UserAccountMenu: Story = {
     render: () => (
         <DropdownMenu>
             <DropdownMenuTrigger asChild>
-                <button className="flex items-center h-[36px] gap-2 rounded-lg border border-border-asec bg-bg-asec pr-3 py-0 transition-colors hover:bg-bg-asec-hover focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
-                    <Avatar className="h-full w-auto aspect-square">
-                        <AvatarFallback>
-                            JD
-                        </AvatarFallback>
-                    </Avatar>
-                    <ChevronDown className="h-4 w-4 text-neutral-600" />
+                <button className="relative flex items-center h-9 gap-2 rounded-lg border border-border-asec bg-bg-asec px-2 pl-10 transition-colors hover:bg-bg-asec-hover focus:outline-none [&[data-state=open]_svg]:rotate-180 data-[state=open]:bg-bg-asec-pressed">
+                    <span className="absolute -left-0.5 top-0 h-full flex items-center">
+                        <Avatar className="size-9 rounded-lg">
+                            <AvatarFallback>
+                                U
+                            </AvatarFallback>
+                        </Avatar>
+                    </span>
+                    <ChevronDown className="size-4 text-neutral-600 transition-transform duration-200" />
                 </button>
             </DropdownMenuTrigger>
-            <DropdownMenuContent className="w-56" align="end">
-                <DropdownMenuLabel className="font-normal">
-                    <div className="flex flex-col space-y-1">
-                        <p className="text-sm font-medium leading-none">
-                            John Doe
-                        </p>
-                        <p className="text-xs leading-none text-muted-foreground">
-                            john@example.com
-                        </p>
-                    </div>
-                </DropdownMenuLabel>
-                <DropdownMenuSeparator />
+            <DropdownMenuContent align="end">
                 <DropdownMenuGroup>
                     <DropdownMenuItem>
-                        <User className="mr-2 h-4 w-4" />
-                        <span>Profile</span>
-                        <DropdownMenuShortcut>⇧⌘P</DropdownMenuShortcut>
+                        <User className="mr-1" />
+                        <span>Account</span>
                     </DropdownMenuItem>
                     <DropdownMenuItem>
-                        <CreditCard className="mr-2 h-4 w-4" />
-                        <span>Billing</span>
-                        <DropdownMenuShortcut>⌘B</DropdownMenuShortcut>
-                    </DropdownMenuItem>
-                    <DropdownMenuItem>
-                        <Settings className="mr-2 h-4 w-4" />
-                        <span>Settings</span>
-                        <DropdownMenuShortcut>⌘S</DropdownMenuShortcut>
-                    </DropdownMenuItem>
-                    <DropdownMenuItem>
-                        <Keyboard className="mr-2 h-4 w-4" />
-                        <span>Keyboard shortcuts</span>
-                        <DropdownMenuShortcut>⌘K</DropdownMenuShortcut>
+                        <MessageCircleHeart className="mr-1" />
+                        <span>Contact us</span>
                     </DropdownMenuItem>
                 </DropdownMenuGroup>
                 <DropdownMenuSeparator />
                 <DropdownMenuItem>
-                    <LogOut className="mr-2 h-4 w-4" />
+                    <LogOut className="mr-1" />
                     <span>Log out</span>
-                    <DropdownMenuShortcut>⇧⌘Q</DropdownMenuShortcut>
                 </DropdownMenuItem>
             </DropdownMenuContent>
         </DropdownMenu>
