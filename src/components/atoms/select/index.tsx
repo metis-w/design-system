@@ -73,7 +73,7 @@ function SelectTrigger({
             data-slot="select-trigger"
             data-size={size}
             className={cn(
-                "h-10 flex px-4 py-3 w-full rounded-lg border text-ui-label-base",
+                "h-10 flex px-4 py-3 w-full rounded-lg border typo-ui-label-base",
                 "bg-bg-inp border-border-inp text-text-inp-filled",
                 "data-[placeholder]:text-text-inp",
                 "focus:border-border-inp-focus focus:ring-2 focus:ring-ring-inp-focus outline-none",
