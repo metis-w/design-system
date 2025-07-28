@@ -9,3 +9,4 @@ export * from "./skeleton";
 export * from "./text-area";
 export * from "./progress";
 export * from "./icon-button";
+export * from "./text-link";

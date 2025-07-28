@@ -16,6 +16,7 @@ import {
     DropdownMenuGroup,
 } from ".";
 import { Button } from "../../atoms/button";
+import { TextLink } from "../../atoms/text-link";
 import { Avatar, AvatarFallback } from "../../atoms/avatar";
 import {
     User,
@@ -31,7 +32,6 @@ import {
     Cloud,
     ChevronDown,
     MessageCircleHeart,
-    Icon,
 } from "lucide-react";
 import { useState } from "react";
 
@@ -311,6 +311,7 @@ export const UserAccountMenu: Story = {
         </DropdownMenu>
     ),
 };
+
 export const Menu: Story = {
     render: () => (
         <DropdownMenu>
@@ -329,18 +330,29 @@ export const Menu: Story = {
                 </div>
             </DropdownMenuTrigger>
             <DropdownMenuContent align="end">
-                <DropdownMenuItem>
-                    <User />
-                    <span>Account</span>
+                <DropdownMenuItem asChild>
+                    <TextLink size="sm" layout="dropdown" href="/account">
+                        <User />
+                        <span>Account</span>
+                    </TextLink>
                 </DropdownMenuItem>
-                <DropdownMenuItem>
-                    <MessageCircleHeart />
-                    <span>Contact us</span>
+                <DropdownMenuItem asChild>
+                    <TextLink size="sm" layout="dropdown" href="/contact">
+                        <MessageCircleHeart />
+                        <span>Contact us</span>
+                    </TextLink>
                 </DropdownMenuItem>
                 <DropdownMenuSeparator />
-                <DropdownMenuItem>
-                    <LogOut />
-                    <span>Log out</span>
+                <DropdownMenuItem asChild>
+                    <TextLink
+                        size="sm"
+                        variant="destructive"
+                        layout="dropdown"
+                        href="/logout"
+                    >
+                        <LogOut />
+                        <span>Log out</span>
+                    </TextLink>
                 </DropdownMenuItem>
             </DropdownMenuContent>
         </DropdownMenu>
