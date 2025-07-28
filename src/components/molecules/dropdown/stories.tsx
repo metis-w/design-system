@@ -31,6 +31,7 @@ import {
     Cloud,
     ChevronDown,
     MessageCircleHeart,
+    Icon,
 } from "lucide-react";
 import { useState } from "react";
 
@@ -284,9 +285,7 @@ export const UserAccountMenu: Story = {
                 <button className="relative flex items-center h-9 gap-2 rounded-lg border border-border-asec bg-bg-asec px-2 pl-10 transition-colors hover:bg-bg-asec-hover focus:outline-none [&[data-state=open]_svg]:rotate-180 data-[state=open]:bg-bg-asec-pressed">
                     <span className="absolute -left-0.5 top-0 h-full flex items-center">
                         <Avatar className="size-9 rounded-lg">
-                            <AvatarFallback>
-                                U
-                            </AvatarFallback>
+                            <AvatarFallback>U</AvatarFallback>
                         </Avatar>
                     </span>
                     <ChevronDown className="size-4 text-neutral-600 transition-transform duration-200" />
@@ -306,6 +305,41 @@ export const UserAccountMenu: Story = {
                 <DropdownMenuSeparator />
                 <DropdownMenuItem>
                     <LogOut className="mr-1" />
+                    <span>Log out</span>
+                </DropdownMenuItem>
+            </DropdownMenuContent>
+        </DropdownMenu>
+    ),
+};
+export const Menu: Story = {
+    render: () => (
+        <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+                <div className="relative flex items-center rounded-lg bg-bg-asec inner-border-pseudo shadow-sm transition-all hover:bg-bg-asec-hover hover:shadow-none focus:outline-none [&[data-state=open]_svg]:rotate-180 data-[state=open]:bg-bg-asec-pressed">
+                    <div className="size-9 relative">
+                        <div className="absolute h-full flex items-center">
+                            <Avatar className="size-9 rounded-lg">
+                                <AvatarFallback>U</AvatarFallback>
+                            </Avatar>
+                        </div>
+                    </div>
+                    <div className="size-9 flex items-center justify-center">
+                        <ChevronDown className="size-4 text-text-agh transition-transform duration-200" />
+                    </div>
+                </div>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent align="end">
+                <DropdownMenuItem>
+                    <User />
+                    <span>Account</span>
+                </DropdownMenuItem>
+                <DropdownMenuItem>
+                    <MessageCircleHeart />
+                    <span>Contact us</span>
+                </DropdownMenuItem>
+                <DropdownMenuSeparator />
+                <DropdownMenuItem>
+                    <LogOut />
                     <span>Log out</span>
                 </DropdownMenuItem>
             </DropdownMenuContent>

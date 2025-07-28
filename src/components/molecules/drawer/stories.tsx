@@ -4,7 +4,7 @@ import { Button } from "../../atoms/button";
 import { IconButton } from "../../atoms/icon-button";
 import { Input } from "../../atoms/input";
 import { Label } from "../../atoms/label";
-import { 
+import {
     Drawer,
     DrawerClose,
     DrawerContent,
@@ -43,7 +43,8 @@ export const Default: Story = {
                 </DrawerHeader>
                 <div className="p-4">
                     <p className="typo-ui-body-base text-text-pr">
-                        Drawer content goes here. You can add any content you need.
+                        Drawer content goes here. You can add any content you
+                        need.
                     </p>
                 </div>
                 <DrawerFooter>
@@ -65,7 +66,7 @@ export const WithForm: Story = {
             <Drawer>
                 <DrawerTrigger asChild>
                     <Button>
-                        <User className="w-4 h-4 mr-2" />
+                        <User className="w-4 h-4" />
                         Add User
                     </Button>
                 </DrawerTrigger>
@@ -75,7 +76,8 @@ export const WithForm: Story = {
                             <div>
                                 <DrawerTitle>Add New User</DrawerTitle>
                                 <DrawerDescription>
-                                    Enter the user details below to create a new account.
+                                    Enter the user details below to create a new
+                                    account.
                                 </DrawerDescription>
                             </div>
                             <DrawerClose asChild>
@@ -109,7 +111,9 @@ export const WithForm: Story = {
                     <DrawerFooter>
                         <Button className="w-full">Create User</Button>
                         <DrawerClose asChild>
-                            <Button variant="secondary" className="w-full">Cancel</Button>
+                            <Button variant="secondary" className="w-full">
+                                Cancel
+                            </Button>
                         </DrawerClose>
                     </DrawerFooter>
                 </DrawerContent>
@@ -133,7 +137,8 @@ export const FromTop: Story = {
                 </DrawerHeader>
                 <div className="p-4">
                     <p className="typo-ui-body-base text-text-pr">
-                        Perfect for notifications, alerts, or quick actions that don't require full screen attention.
+                        Perfect for notifications, alerts, or quick actions that
+                        don't require full screen attention.
                     </p>
                 </div>
                 <DrawerFooter>
@@ -173,28 +178,40 @@ export const FromRight: Story = {
                 </DrawerHeader>
                 <div className="p-4 space-y-4">
                     <div className="space-y-2">
-                        <h4 className="typo-ui-label-lg text-text-pr">Notifications</h4>
+                        <h4 className="typo-ui-label-lg text-text-pr">
+                            Notifications
+                        </h4>
                         <div className="space-y-2">
                             <label className="flex items-center space-x-2">
                                 <input type="checkbox" defaultChecked />
-                                <span className="typo-ui-body-sm text-text-pr">Email notifications</span>
+                                <span className="typo-ui-body-sm text-text-pr">
+                                    Email notifications
+                                </span>
                             </label>
                             <label className="flex items-center space-x-2">
                                 <input type="checkbox" />
-                                <span className="typo-ui-body-sm text-text-pr">Push notifications</span>
+                                <span className="typo-ui-body-sm text-text-pr">
+                                    Push notifications
+                                </span>
                             </label>
                         </div>
                     </div>
                     <div className="space-y-2">
-                        <h4 className="typo-ui-label-lg text-text-pr">Privacy</h4>
+                        <h4 className="typo-ui-label-lg text-text-pr">
+                            Privacy
+                        </h4>
                         <div className="space-y-2">
                             <label className="flex items-center space-x-2">
                                 <input type="checkbox" defaultChecked />
-                                <span className="typo-ui-body-sm text-text-pr">Profile visibility</span>
+                                <span className="typo-ui-body-sm text-text-pr">
+                                    Profile visibility
+                                </span>
                             </label>
                             <label className="flex items-center space-x-2">
                                 <input type="checkbox" defaultChecked />
-                                <span className="typo-ui-body-sm text-text-pr">Activity status</span>
+                                <span className="typo-ui-body-sm text-text-pr">
+                                    Activity status
+                                </span>
                             </label>
                         </div>
                     </div>
@@ -202,7 +219,9 @@ export const FromRight: Story = {
                 <DrawerFooter>
                     <Button className="w-full">Save Changes</Button>
                     <DrawerClose asChild>
-                        <Button variant="secondary" className="w-full">Cancel</Button>
+                        <Button variant="secondary" className="w-full">
+                            Cancel
+                        </Button>
                     </DrawerClose>
                 </DrawerFooter>
             </DrawerContent>
@@ -232,19 +251,34 @@ export const FromLeft: Story = {
                 </DrawerHeader>
                 <div className="p-4">
                     <nav className="space-y-2">
-                        <a href="#" className="block p-2 rounded typo-ui-body-base text-text-pr hover:bg-surf-sec transition-colors">
+                        <a
+                            href="#"
+                            className="block p-2 rounded typo-ui-body-base text-text-pr hover:bg-surf-sec transition-colors"
+                        >
                             Dashboard
                         </a>
-                        <a href="#" className="block p-2 rounded typo-ui-body-base text-text-pr hover:bg-surf-sec transition-colors">
+                        <a
+                            href="#"
+                            className="block p-2 rounded typo-ui-body-base text-text-pr hover:bg-surf-sec transition-colors"
+                        >
                             Users
                         </a>
-                        <a href="#" className="block p-2 rounded typo-ui-body-base text-text-pr hover:bg-surf-sec transition-colors">
+                        <a
+                            href="#"
+                            className="block p-2 rounded typo-ui-body-base text-text-pr hover:bg-surf-sec transition-colors"
+                        >
                             Settings
                         </a>
-                        <a href="#" className="block p-2 rounded typo-ui-body-base text-text-pr hover:bg-surf-sec transition-colors">
+                        <a
+                            href="#"
+                            className="block p-2 rounded typo-ui-body-base text-text-pr hover:bg-surf-sec transition-colors"
+                        >
                             Reports
                         </a>
-                        <a href="#" className="block p-2 rounded typo-ui-body-base text-text-pr hover:bg-surf-sec transition-colors">
+                        <a
+                            href="#"
+                            className="block p-2 rounded typo-ui-body-base text-text-pr hover:bg-surf-sec transition-colors"
+                        >
                             Help
                         </a>
                     </nav>
@@ -264,10 +298,14 @@ export const AllDirections: Story = {
                 <DrawerContent>
                     <DrawerHeader>
                         <DrawerTitle>Bottom Drawer</DrawerTitle>
-                        <DrawerDescription>Slides up from bottom</DrawerDescription>
+                        <DrawerDescription>
+                            Slides up from bottom
+                        </DrawerDescription>
                     </DrawerHeader>
                     <div className="p-4">
-                        <p className="typo-ui-body-sm text-text-pr">Bottom drawer content</p>
+                        <p className="typo-ui-body-sm text-text-pr">
+                            Bottom drawer content
+                        </p>
                     </div>
                     <DrawerFooter>
                         <DrawerClose asChild>
@@ -284,10 +322,14 @@ export const AllDirections: Story = {
                 <DrawerContent>
                     <DrawerHeader>
                         <DrawerTitle>Top Drawer</DrawerTitle>
-                        <DrawerDescription>Slides down from top</DrawerDescription>
+                        <DrawerDescription>
+                            Slides down from top
+                        </DrawerDescription>
                     </DrawerHeader>
                     <div className="p-4">
-                        <p className="typo-ui-body-sm text-text-pr">Top drawer content</p>
+                        <p className="typo-ui-body-sm text-text-pr">
+                            Top drawer content
+                        </p>
                     </div>
                     <DrawerFooter>
                         <DrawerClose asChild>
@@ -307,7 +349,9 @@ export const AllDirections: Story = {
                         <DrawerDescription>Slides from left</DrawerDescription>
                     </DrawerHeader>
                     <div className="p-4">
-                        <p className="typo-ui-body-sm text-text-pr">Left drawer content</p>
+                        <p className="typo-ui-body-sm text-text-pr">
+                            Left drawer content
+                        </p>
                     </div>
                     <DrawerFooter>
                         <DrawerClose asChild>
@@ -327,7 +371,9 @@ export const AllDirections: Story = {
                         <DrawerDescription>Slides from right</DrawerDescription>
                     </DrawerHeader>
                     <div className="p-4">
-                        <p className="typo-ui-body-sm text-text-pr">Right drawer content</p>
+                        <p className="typo-ui-body-sm text-text-pr">
+                            Right drawer content
+                        </p>
                     </div>
                     <DrawerFooter>
                         <DrawerClose asChild>

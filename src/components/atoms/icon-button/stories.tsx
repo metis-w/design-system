@@ -135,7 +135,7 @@ export const Interactive: Story = {
             </div>
 
             <div className="flex flex-wrap gap-4">
-                <div className="flex items-center gap-2 p-3 bg-cont-sec rounded-lg">
+                <div className="flex items-center gap-2 p-3 bg-cont-pr rounded-lg">
                     <span className="typo-ui-label-base text-text-pr">
                         Like this post
                     </span>

@@ -110,7 +110,7 @@ function DropdownMenuItem({
             data-inset={inset}
             data-variant={variant}
             className={cn(
-                "relative flex cursor-default items-center gap-2 rounded-sm px-2 py-1.5 typo-ui-label-base outline-hidden select-none transition-colors whitespace-nowrap data-[disabled]:pointer-events-none data-[disabled]:opacity-50 data-[inset]:pl-8 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4 [&_svg]:stroke-[2.5] focus:bg-bg-agh-hover focus:text-text-agh data-[variant=destructive]:text-text-amist data-[variant=destructive]:focus:bg-bg-amist data-[variant=destructive]:focus:text-text-amist data-[variant=destructive]:[&_svg]:text-text-amist",
+                "relative flex cursor-default items-center gap-1 rounded-sm px-1 py-1 typo-ui-label-base outline-hidden select-none transition-colors whitespace-nowrap data-[disabled]:pointer-events-none data-[disabled]:text-text-agh-disabled [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4 focus:bg-bg-agh-hover focus:text-text-agh data-[variant=destructive]:text-text-amist data-[variant=destructive]:focus:bg-bg-amist data-[variant=destructive]:focus:text-text-amist",
                 className
             )}
             {...props}
@@ -191,7 +191,7 @@ function DropdownMenuLabel({
             data-slot="dropdown-menu-label"
             data-inset={inset}
             className={cn(
-                "px-2 py-1.5 typo-ui-label-base text-text-sec whitespace-nowrap data-[inset]:pl-8",
+                "px-1 py-1 typo-ui-label-base text-text-sec whitespace-nowrap data-[inset]:pl-8",
                 className
             )}
             {...props}
@@ -206,7 +206,7 @@ function DropdownMenuSeparator({
     return (
         <DropdownMenuPrimitive.Separator
             data-slot="dropdown-menu-separator"
-            className={cn("bg-border-default -mx-1 my-1 h-px", className)}
+            className={cn("bg-border-default h-px", className)}
             {...props}
         />
     );
