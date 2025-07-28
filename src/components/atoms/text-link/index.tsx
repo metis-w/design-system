@@ -37,13 +37,6 @@ const textLinkVariants = cva(
     }
 );
 
-interface TextLinkProps
-    extends React.ComponentProps<"a">,
-        VariantProps<typeof textLinkVariants> {
-    asChild?: boolean;
-    external?: boolean;
-}
-
 function TextLink({
     className,
     variant,
@@ -54,10 +47,13 @@ function TextLink({
     external = false,
     children,
     ...props
-}: TextLinkProps) {
+}: React.ComponentProps<"a"> &
+    VariantProps<typeof textLinkVariants> & {
+        asChild?: boolean;
+        external?: boolean;
+    }) {
     const Comp = asChild ? Slot : "a";
 
-    // Add external link props automatically (but not for dropdown layout)
     const externalProps =
         external && layout !== "dropdown"
             ? {
@@ -87,4 +83,3 @@ function TextLink({
 }
 
 export { TextLink, textLinkVariants };
-export type { TextLinkProps };
