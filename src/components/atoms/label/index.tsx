@@ -3,11 +3,13 @@ import * as LabelPrimitive from "@radix-ui/react-label";
 
 import { cn } from "@/lib/utils";
 
-interface LabelProps extends React.ComponentProps<typeof LabelPrimitive.Root> {
+export function Label({
+    className,
+    disabled,
+    ...props
+}: React.ComponentProps<typeof LabelPrimitive.Root> & {
     disabled?: boolean;
-}
-
-export function Label({ className, disabled, ...props }: LabelProps) {
+}) {
     return (
         <LabelPrimitive.Root
             data-slot="label"

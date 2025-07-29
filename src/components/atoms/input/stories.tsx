@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { Input } from ".";
+import { Label } from "../label";
 
 const meta = {
     title: "Components/Atoms/Input",
@@ -104,9 +105,9 @@ export const PasswordExamples: Story = {
 
             <div className="space-y-4">
                 <div className="space-y-2">
-                    <label className="typo-ui-label-base text-text-inp-label">
+                    <Label>
                         Regular Password Input
-                    </label>
+                    </Label>
                     <Input
                         type="password"
                         placeholder="Enter password..."
@@ -115,9 +116,9 @@ export const PasswordExamples: Story = {
                 </div>
 
                 <div className="space-y-2">
-                    <label className="typo-ui-label-base text-text-inp-label">
-                        Password with Toggle
-                    </label>
+                    <Label>
+                        Password Input with Placeholder
+                    </Label>
                     <Input
                         type="password"
                         placeholder="Enter password..."
@@ -127,9 +128,9 @@ export const PasswordExamples: Story = {
                 </div>
 
                 <div className="space-y-2">
-                    <label className="typo-ui-label-base text-text-inp-label">
-                        Empty Password with Toggle
-                    </label>
+                    <Label>
+                        Empty Password Input
+                    </Label>
                     <Input
                         type="password"
                         placeholder="Enter password..."
@@ -138,9 +139,9 @@ export const PasswordExamples: Story = {
                 </div>
 
                 <div className="space-y-2">
-                    <label className="typo-ui-label-base text-text-inp-label">
-                        Disabled Password with Toggle
-                    </label>
+                    <Label disabled>
+                        Disabled Password Input
+                    </Label>
                     <Input
                         type="password"
                         placeholder="Enter password..."
@@ -151,9 +152,9 @@ export const PasswordExamples: Story = {
                 </div>
 
                 <div className="space-y-2">
-                    <label className="typo-ui-label-base text-text-inp-label">
+                    <Label>
                         Readonly Text Input
-                    </label>
+                    </Label>
                     <Input
                         placeholder="Readonly input"
                         defaultValue="This is readonly text"
@@ -162,9 +163,9 @@ export const PasswordExamples: Story = {
                 </div>
 
                 <div className="space-y-2">
-                    <label className="typo-ui-label-base text-text-inp-label">
-                        Readonly Password with Toggle
-                    </label>
+                    <Label>
+                        Readonly Password Input
+                    </Label>
                     <Input
                         type="password"
                         placeholder="Enter password..."

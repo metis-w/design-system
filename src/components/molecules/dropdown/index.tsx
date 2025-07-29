@@ -24,11 +24,13 @@ function DropdownMenuPortal({
 }
 
 function DropdownMenuTrigger({
+    className,
     ...props
 }: React.ComponentProps<typeof DropdownMenuPrimitive.Trigger>) {
     return (
         <DropdownMenuPrimitive.Trigger
             data-slot="dropdown-menu-trigger"
+            className={cn("data-[state=open]:bg-bg-asec-pressed", className)}
             {...props}
         />
     );

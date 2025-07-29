@@ -13,7 +13,6 @@ import {
     DropdownMenuSubContent,
     DropdownMenuSubTrigger,
     DropdownMenuShortcut,
-    DropdownMenuGroup,
 } from ".";
 import { Button } from "../../atoms/button";
 import { TextLink } from "../../atoms/text-link";
@@ -33,8 +32,6 @@ import {
     Cloud,
     ChevronDown,
     MessageCircleHeart,
-    StickyNote,
-    Archive,
     EllipsisVertical,
 } from "lucide-react";
 import { useState } from "react";
@@ -286,7 +283,7 @@ export const AvatarDropdown: Story = {
     render: () => (
         <DropdownMenu>
             <DropdownMenuTrigger asChild>
-                <div className="relative flex items-center rounded-lg bg-bg-asec inner-border-pseudo shadow-sm transition-all hover:bg-bg-asec-hover hover:shadow-none focus:outline-none [&[data-state=open]_svg]:rotate-180 data-[state=open]:bg-bg-asec-pressed data-[state=open]:shadow-none">
+                <div className="relative flex items-center rounded-lg bg-bg-asec hover:bg-bg-asec-hover hover:shadow-none focus:outline-none inner-border-pseudo shadow-sm transition-all [&[data-state=open]_svg]:rotate-180 data-[state=open]:shadow-none">
                     <div className="size-9 relative">
                         <div className="absolute h-full flex items-center">
                             <Avatar className="size-9 rounded-lg">
