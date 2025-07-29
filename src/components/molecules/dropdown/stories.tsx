@@ -316,7 +316,7 @@ export const Menu: Story = {
     render: () => (
         <DropdownMenu>
             <DropdownMenuTrigger asChild>
-                <div className="relative flex items-center rounded-lg bg-bg-asec inner-border-pseudo shadow-sm transition-all hover:bg-bg-asec-hover hover:shadow-none focus:outline-none [&[data-state=open]_svg]:rotate-180 data-[state=open]:bg-bg-asec-pressed">
+                <div className="relative flex items-center rounded-lg bg-bg-asec inner-border-pseudo shadow-sm transition-all hover:bg-bg-asec-hover hover:shadow-none focus:outline-none [&[data-state=open]_svg]:rotate-180 data-[state=open]:bg-bg-asec-pressed data-[state=open]:shadow-none">
                     <div className="size-9 relative">
                         <div className="absolute h-full flex items-center">
                             <Avatar className="size-9 rounded-lg">
