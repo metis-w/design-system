@@ -40,17 +40,17 @@ export const Default: Story = {
     },
 };
 
-export const Primary: Story = {
-    args: {
-        variant: "primary",
-        children: "Primary",
-    },
-};
-
 export const Accent: Story = {
     args: {
         variant: "accent",
         children: "Accent",
+    },
+};
+
+export const Primary: Story = {
+    args: {
+        variant: "primary",
+        children: "Primary",
     },
 };
 

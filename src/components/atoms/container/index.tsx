@@ -6,12 +6,12 @@ import { cn } from "@/lib/utils";
 const containerVariants = cva("", {
     variants: {
         type: {
-            main: "mx-auto max-w-[85rem] px-5 py-10 md:px-10",
-            box: "w-full max-w-md space-y-7 p-0 bg-surf-pr md:p-8 md:bg-surf-sec md:border md:border-border-default md:rounded-3xl",
+            content: "mx-auto max-w-[90rem] px-5 py-8 md:px-20 md:py-8",
+            box: "mx-auto max-w-[44rem] px-0 py-0 md:px-10 md:py-10",
         },
     },
     defaultVariants: {
-        type: "main",
+        type: "content",
     },
 });
 

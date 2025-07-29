@@ -19,6 +19,9 @@ const meta = {
         disabled: {
             control: { type: "boolean" },
         },
+        readOnly: {
+            control: { type: "boolean" },
+        },
         showPasswordToggle: {
             control: { type: "boolean" },
         },
@@ -79,16 +82,26 @@ export const DisabledWithValue: Story = {
     },
 };
 
+export const Readonly: Story = {
+    args: {
+        placeholder: "This is readonly",
+        defaultValue: "This input is readonly",
+        readOnly: true,
+    },
+};
+
 export const PasswordExamples: Story = {
     render: () => (
         <div className="space-y-4 w-80">
             <div className="space-y-2">
-                <h3 className="typo-ui-title-sm text-text-pr">Password Input Examples</h3>
+                <h3 className="typo-ui-title-sm text-text-pr">
+                    Password Input Examples
+                </h3>
                 <p className="typo-ui-body-sm text-text-sec">
                     Different password input configurations
                 </p>
             </div>
-            
+
             <div className="space-y-4">
                 <div className="space-y-2">
                     <label className="typo-ui-label-base text-text-inp-label">
@@ -134,6 +147,30 @@ export const PasswordExamples: Story = {
                         showPasswordToggle={true}
                         defaultValue="secretpassword"
                         disabled
+                    />
+                </div>
+
+                <div className="space-y-2">
+                    <label className="typo-ui-label-base text-text-inp-label">
+                        Readonly Text Input
+                    </label>
+                    <Input
+                        placeholder="Readonly input"
+                        defaultValue="This is readonly text"
+                        readOnly
+                    />
+                </div>
+
+                <div className="space-y-2">
+                    <label className="typo-ui-label-base text-text-inp-label">
+                        Readonly Password with Toggle
+                    </label>
+                    <Input
+                        type="password"
+                        placeholder="Enter password..."
+                        showPasswordToggle={true}
+                        defaultValue="secretpassword"
+                        readOnly
                     />
                 </div>
             </div>
