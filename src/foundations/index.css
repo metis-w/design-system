@@ -3,9 +3,6 @@
 @import "tw-animate-css";
 
 @theme {
-    /* Font */
-    --font-family-sans: "Inter Variable", "Inter", -apple-system,
-        BlinkMacSystemFont, "Segoe UI", sans-serif;
     /* Colours: Primitive */
     --color-black: #000000;
     --color-white: #ffffff;
@@ -192,6 +189,16 @@
     /* Popover */
     --color-popover: var(--color-white);
     --color-popover-foreground: var(--color-neutral-950);
+
+    /* Font */
+    --font-family-sans: "Inter Variable", "Inter", -apple-system,
+        BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+    /* Font weights */
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
 
     /* Typography: Primitive */
     --text-ui-title-lg: 2rem;
