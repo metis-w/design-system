@@ -193,11 +193,6 @@
     --color-popover: var(--color-white);
     --color-popover-foreground: var(--color-neutral-950);
 
-    --font-weight-regular: 400;
-    --font-weight-medium: 475;
-    --font-weight-semibold: 575;
-    --font-weight-bold: 675;
-
     /* Typography: Primitive */
     --text-ui-title-lg: 2rem;
     --leading-ui-title-lg: 2.5rem;
@@ -228,9 +223,6 @@
 
     --text-ui-label-sm: 0.75rem;
     --leading-ui-label-sm: 1rem;
-
-    --font-feature-settings: "cv02", "cv03", "cv04", "cv11";
-    --font-optical-sizing: auto;
 }
 
 @layer base {
@@ -246,8 +238,6 @@
         font-size: var(--text-ui-title-lg);
         line-height: var(--leading-ui-title-lg);
         font-weight: var(--font-weight-semibold);
-        font-optical-sizing: var(--font-optical-sizing);
-        font-feature-settings: var(--font-feature-settings);
     }
 
     .typo-ui-title-base {
@@ -255,8 +245,6 @@
         font-size: var(--text-ui-title-base);
         line-height: var(--leading-ui-title-base);
         font-weight: var(--font-weight-semibold);
-        font-optical-sizing: var(--font-optical-sizing);
-        font-feature-settings: var(--font-feature-settings);
     }
 
     .typo-ui-title-sm {
@@ -264,8 +252,6 @@
         font-size: var(--text-ui-title-sm);
         line-height: var(--leading-ui-title-sm);
         font-weight: var(--font-weight-semibold);
-        font-optical-sizing: var(--font-optical-sizing);
-        font-feature-settings: var(--font-feature-settings);
     }
 
     .typo-ui-subtitle {
@@ -273,8 +259,6 @@
         font-size: var(--text-ui-subtitle);
         line-height: var(--leading-ui-subtitle);
         font-weight: var(--font-weight-medium);
-        font-optical-sizing: var(--font-optical-sizing);
-        font-feature-settings: var(--font-feature-settings);
     }
 
     .typo-ui-body-lg {
@@ -282,7 +266,6 @@
         font-size: var(--text-ui-body-lg);
         line-height: var(--leading-ui-body-lg);
         font-weight: var(--font-weight-regular);
-        font-optical-sizing: var(--font-optical-sizing);
     }
 
     .typo-ui-body-base {
@@ -290,7 +273,6 @@
         font-size: var(--text-ui-body-base);
         line-height: var(--leading-ui-body-base);
         font-weight: var(--font-weight-regular);
-        font-optical-sizing: var(--font-optical-sizing);
     }
 
     .typo-ui-body-sm {
@@ -298,7 +280,6 @@
         font-size: var(--text-ui-body-sm);
         line-height: var(--leading-ui-body-sm);
         font-weight: var(--font-weight-regular);
-        font-optical-sizing: var(--font-optical-sizing);
     }
 
     .typo-ui-label-lg {
@@ -306,8 +287,6 @@
         font-size: var(--text-ui-label-lg);
         line-height: var(--leading-ui-label-lg);
         font-weight: var(--font-weight-medium);
-        font-optical-sizing: var(--font-optical-sizing);
-        font-feature-settings: var(--font-feature-settings);
     }
 
     .typo-ui-label-base {
@@ -315,8 +294,6 @@
         font-size: var(--text-ui-label-base);
         line-height: var(--leading-ui-label-base);
         font-weight: var(--font-weight-medium);
-        font-optical-sizing: var(--font-optical-sizing);
-        font-feature-settings: var(--font-feature-settings);
     }
 
     .typo-ui-label-sm {
@@ -324,7 +301,5 @@
         font-size: var(--text-ui-label-sm);
         line-height: var(--leading-ui-label-sm);
         font-weight: var(--font-weight-medium);
-        font-optical-sizing: var(--font-optical-sizing);
-        font-feature-settings: var(--font-feature-settings);
     }
 }
