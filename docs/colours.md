@@ -49,6 +49,7 @@ Used for component backgrounds and containers:
 --color-cont-ident: var(
     --color-purple-200
 ); /* Identity container used for avatars */
+--color-cont-skel: var(--color-neutral-100); /* Skeleton loading container */
 ```
 
 **Usage:**
@@ -56,6 +57,7 @@ Used for component backgrounds and containers:
 ```html
 <div class="bg-cont-suc p-4 rounded">Success message</div>
 <div class="bg-cont-rew p-4 rounded">Review notification</div>
+<div class="bg-cont-skel animate-pulse rounded">Loading skeleton</div>
 ```
 
 ## Text Colours
@@ -213,6 +215,7 @@ All colour combinations meet WCAG AA contrast requirements:
 -   Primary text on primary surfaces: 21:1 contrast ratio
 -   Secondary text on primary surfaces: 7:1 contrast ratio
 -   All action colours have sufficient contrast for text and focus states
+-   Skeleton colours provide sufficient contrast for loading state recognition
 
 ## Customisation
 

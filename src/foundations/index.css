@@ -87,6 +87,7 @@
     /* Container (cont) */
     --color-cont-pr: var(--color-white);
     --color-cont-sec: var(--color-yellow-50);
+    --color-cont-skeleton: var(--color-neutral-200);
     --color-cont-a: var(--color-yellow-100);
     --color-cont-suc: var(--color-green-100);
     --color-cont-rev: var(--color-blue-100);
@@ -308,5 +309,13 @@
         font-size: var(--text-ui-label-sm);
         line-height: var(--leading-ui-label-sm);
         font-weight: var(--font-weight-medium);
+    }
+    .inner-border-pseudo::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border: 1px solid var(--color-neutral-300);
+        border-radius: inherit;
+        pointer-events: none;
     }
 }

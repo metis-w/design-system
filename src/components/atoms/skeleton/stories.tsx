@@ -41,20 +41,32 @@ export const Text: Story = {
     ),
 };
 
-export const Card: Story = {
+export const DeckCard: Story = {
     render: () => (
-        <div className="border border-border-default rounded-lg p-4 space-y-4 max-w-sm">
-            <div className="flex items-center space-x-4">
-                <Skeleton className="w-12 h-12 rounded-full" />
-                <div className="space-y-2">
-                    <Skeleton className="h-4 w-24" />
-                    <Skeleton className="h-3 w-16" />
+        <div className="p-5">
+            <div className="w-full max-w-md">
+                <div className="border border-border-default rounded-lg">
+                    <div className="p-3 space-y-4">
+                        <div className="flex items-start justify-between">
+                            <div className="space-y-2 flex-1">
+                                <Skeleton className="h-6 w-32" />
+                                <Skeleton className="h-4 w-16" />
+                            </div>
+                            <Skeleton className="w-8 h-8" />
+                        </div>
+                        <div className="space-y-2">
+                            <div className="flex items-center justify-between">
+                                <Skeleton className="h-4 w-16" />{" "}
+                                <Skeleton className="h-4 w-8" />
+                            </div>
+                            <Skeleton className="h-2 w-full rounded-full" />
+                        </div>
+                    </div>
+                    <div className="flex flex-col gap-2 p-3 items-stretch justify-between border-t border-t-border-default md:flex-row">
+                        <Skeleton className="h-9 w-full rounded-md md:w-24" />{" "}
+                        <Skeleton className="h-9 w-full rounded-md md:w-24" />{" "}
+                    </div>
                 </div>
-            </div>
-            <div className="space-y-2">
-                <Skeleton className="h-4 w-full" />
-                <Skeleton className="h-4 w-full" />
-                <Skeleton className="h-4 w-3/4" />
             </div>
         </div>
     ),
@@ -68,69 +80,8 @@ export const Button: Story = {
 
 export const Avatar: Story = {
     args: {
-        className: "w-10 h-10 rounded-full",
+        className: "w-9 h-9 rounded-full",
     },
-};
-
-export const ArticleCard: Story = {
-    render: () => (
-        <div className="border border-border-default rounded-lg overflow-hidden max-w-sm">
-            <Skeleton className="h-48 w-full rounded-none" />
-            <div className="p-4 space-y-3">
-                <Skeleton className="h-5 w-full" />
-                <Skeleton className="h-4 w-4/5" />
-                <div className="space-y-2">
-                    <Skeleton className="h-3 w-full" />
-                    <Skeleton className="h-3 w-full" />
-                    <Skeleton className="h-3 w-2/3" />
-                </div>
-                <div className="flex justify-between items-center pt-2">
-                    <Skeleton className="h-3 w-16" />
-                    <Skeleton className="h-8 w-16 rounded-md" />
-                </div>
-            </div>
-        </div>
-    ),
-};
-
-export const Table: Story = {
-    render: () => (
-        <div className="space-y-3 w-full max-w-2xl">
-            {/* Table Header */}
-            <div className="flex gap-4">
-                <Skeleton className="h-4 flex-1" />
-                <Skeleton className="h-4 flex-1" />
-                <Skeleton className="h-4 flex-1" />
-                <Skeleton className="h-4 flex-1" />
-            </div>
-            {/* Table Rows */}
-            {Array.from({ length: 5 }).map((_, i) => (
-                <div key={i} className="flex gap-4">
-                    <Skeleton className="h-3 flex-1" />
-                    <Skeleton className="h-3 flex-1" />
-                    <Skeleton className="h-3 flex-1" />
-                    <Skeleton className="h-3 flex-1" />
-                </div>
-            ))}
-        </div>
-    ),
-    parameters: {
-        layout: 'padded',
-    },
-};
-
-export const SimpleTable: Story = {
-    render: () => (
-        <div className="space-y-2 w-80">
-            <div className="space-y-1">
-                <Skeleton className="h-4 w-full" />
-                <Skeleton className="h-3 w-full" />
-                <Skeleton className="h-3 w-full" />
-                <Skeleton className="h-3 w-full" />
-                <Skeleton className="h-3 w-4/5" />
-            </div>
-        </div>
-    ),
 };
 
 export const Sizes: Story = {

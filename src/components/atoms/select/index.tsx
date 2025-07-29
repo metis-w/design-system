@@ -74,11 +74,11 @@ function SelectTrigger({
             data-size={size}
             className={cn(
                 "h-10 flex px-4 py-3 w-full rounded-lg border typo-ui-label-base",
-                "bg-bg-inp border-border-inp text-text-inp-filled",
+                "bg-bg-inp border-border-inp text-text-inp-filled shadow-xs",
                 "data-[placeholder]:text-text-inp",
                 "focus:border-border-inp-focus focus:ring-2 focus:ring-ring-inp-focus outline-none",
                 "data-[state=open]:border-border-inp-focus data-[state=open]:ring-2 data-[state=open]:ring-ring-inp-focus",
-                "disabled:bg-bg-inp-disabled disabled:text-text-inp-disabled disabled:cursor-not-allowed",
+                "disabled:bg-bg-inp-disabled disabled:text-text-inp-disabled disabled:shadow-none disabled:cursor-not-allowed",
                 "transition-all duration-300 ease-in-out",
                 "flex items-center justify-between gap-2",
                 "[&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
@@ -138,7 +138,7 @@ function SelectLabel({
         <SelectPrimitive.Label
             data-slot="select-label"
             className={cn(
-                "text-text-ter px-2 py-1.5 text-ui-label-sm",
+                "text-text-ter px-2 py-1.5 typo-ui-label-sm",
                 className
             )}
             {...props}
@@ -155,8 +155,8 @@ function SelectItem({
         <SelectPrimitive.Item
             data-slot="select-item"
             className={cn(
-                "h-10 text-ui-label-base text-text-pr relative flex w-full cursor-default items-center gap-2 rounded-md py-2 pr-8 pl-3 outline-hidden select-none",
-                "hover:bg-surf-sec focus:bg-surf-sec",
+                "py-2 px-2 typo-ui-label-base text-text-pr relative flex w-full cursor-default items-center gap-1 rounded-md outline-hidden select-none",
+                "hover:bg-bg-agh-hover",
                 "data-[disabled]:pointer-events-none data-[disabled]:text-text-inp-disabled",
                 "[&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
                 className
@@ -165,7 +165,7 @@ function SelectItem({
         >
             <span className="absolute right-2 flex size-3.5 items-center justify-center">
                 <SelectPrimitive.ItemIndicator>
-                    <CheckIcon className="size-4 text-text-pr" />
+                    <CheckIcon className="size-4 text-text-agh" />
                 </SelectPrimitive.ItemIndicator>
             </span>
             <SelectPrimitive.ItemText>{children}</SelectPrimitive.ItemText>
@@ -181,7 +181,7 @@ function SelectSeparator({
         <SelectPrimitive.Separator
             data-slot="select-separator"
             className={cn(
-                "bg-border-default pointer-events-none -mx-1 my-1 h-px",
+                "bg-border-default pointer-events-none h-px",
                 className
             )}
             {...props}

@@ -299,56 +299,24 @@ export const AvatarDropdown: Story = {
                     </div>
                 </div>
             </DropdownMenuTrigger>
-            <DropdownMenuContent align="end">
+            <DropdownMenuContent align="end" className="w-40">
                 <DropdownMenuItem asChild>
-                    <TextLink size="sm" layout="dropdown" href="/account">
+                    <TextLink layout="dropdown" href="/">
                         <User />
                         <span>Account</span>
                     </TextLink>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
-                    <TextLink size="sm" layout="dropdown" href="/contact">
+                    <TextLink layout="dropdown" href="/">
                         <MessageCircleHeart />
                         <span>Contact us</span>
                     </TextLink>
                 </DropdownMenuItem>
                 <DropdownMenuSeparator />
                 <DropdownMenuItem asChild>
-                    <TextLink
-                        size="sm"
-                        variant="destructive"
-                        layout="dropdown"
-                        href="/logout"
-                    >
+                    <TextLink variant="destructive" layout="dropdown" href="/">
                         <LogOut />
                         <span>Log out</span>
-                    </TextLink>
-                </DropdownMenuItem>
-            </DropdownMenuContent>
-        </DropdownMenu>
-    ),
-};
-
-export const ButtonDropdown: Story = {
-    render: () => (
-        <DropdownMenu>
-            <DropdownMenuTrigger asChild>
-                <Button variant="accent">
-                    <Plus />
-                    Add
-                </Button>
-            </DropdownMenuTrigger>
-            <DropdownMenuContent align="center">
-                <DropdownMenuItem asChild>
-                    <TextLink size="sm" layout="dropdown" href="/">
-                        <StickyNote />
-                        <span>Card</span>
-                    </TextLink>
-                </DropdownMenuItem>
-                <DropdownMenuItem asChild>
-                    <TextLink size="sm" layout="dropdown" href="/">
-                        <Archive />
-                        <span>Deck</span>
                     </TextLink>
                 </DropdownMenuItem>
             </DropdownMenuContent>
@@ -366,18 +334,13 @@ export const DeckDropdown: Story = {
             </DropdownMenuTrigger>
             <DropdownMenuContent align="end">
                 <DropdownMenuItem asChild>
-                    <TextLink size="sm" layout="dropdown" href="/">
+                    <TextLink layout="dropdown" href="/">
                         <span>Edit deck</span>
                     </TextLink>
                 </DropdownMenuItem>
                 <DropdownMenuSeparator />
                 <DropdownMenuItem asChild>
-                    <TextLink
-                        variant="destructive"
-                        size="sm"
-                        layout="dropdown"
-                        href="/"
-                    >
+                    <TextLink variant="destructive" layout="dropdown" href="/">
                         <span>Delete deck</span>
                     </TextLink>
                 </DropdownMenuItem>

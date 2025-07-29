@@ -39,31 +39,6 @@ export const Default: Story = {
     ),
 };
 
-export const WithGroups: Story = {
-    render: () => (
-        <Select>
-            <SelectTrigger className="w-[180px]">
-                <SelectValue placeholder="Select a theme" />
-            </SelectTrigger>
-            <SelectContent>
-                <SelectGroup>
-                    <SelectLabel>Fruits</SelectLabel>
-                    <SelectItem value="apple">Apple</SelectItem>
-                    <SelectItem value="banana">Banana</SelectItem>
-                    <SelectItem value="blueberry">Blueberry</SelectItem>
-                </SelectGroup>
-                <SelectSeparator />
-                <SelectGroup>
-                    <SelectLabel>Vegetables</SelectLabel>
-                    <SelectItem value="carrot">Carrot</SelectItem>
-                    <SelectItem value="potato">Potato</SelectItem>
-                    <SelectItem value="tomato">Tomato</SelectItem>
-                </SelectGroup>
-            </SelectContent>
-        </Select>
-    ),
-};
-
 export const Disabled: Story = {
     render: () => (
         <Select disabled>
