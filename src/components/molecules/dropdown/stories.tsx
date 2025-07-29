@@ -17,6 +17,7 @@ import {
 } from ".";
 import { Button } from "../../atoms/button";
 import { TextLink } from "../../atoms/text-link";
+import { IconButton } from "../../atoms/icon-button";
 import { Avatar, AvatarFallback } from "../../atoms/avatar";
 import {
     User,
@@ -32,6 +33,9 @@ import {
     Cloud,
     ChevronDown,
     MessageCircleHeart,
+    StickyNote,
+    Archive,
+    EllipsisVertical,
 } from "lucide-react";
 import { useState } from "react";
 
@@ -278,41 +282,7 @@ export const Alignment: Story = {
     ),
 };
 
-export const UserAccountMenu: Story = {
-    render: () => (
-        <DropdownMenu>
-            <DropdownMenuTrigger asChild>
-                <button className="relative flex items-center h-9 gap-2 rounded-lg border border-border-asec bg-bg-asec px-2 pl-10 transition-colors hover:bg-bg-asec-hover focus:outline-none [&[data-state=open]_svg]:rotate-180 data-[state=open]:bg-bg-asec-pressed">
-                    <span className="absolute -left-0.5 top-0 h-full flex items-center">
-                        <Avatar className="size-9 rounded-lg">
-                            <AvatarFallback>U</AvatarFallback>
-                        </Avatar>
-                    </span>
-                    <ChevronDown className="size-4 text-neutral-600 transition-transform duration-200" />
-                </button>
-            </DropdownMenuTrigger>
-            <DropdownMenuContent align="end">
-                <DropdownMenuGroup>
-                    <DropdownMenuItem>
-                        <User className="mr-1" />
-                        <span>Account</span>
-                    </DropdownMenuItem>
-                    <DropdownMenuItem>
-                        <MessageCircleHeart className="mr-1" />
-                        <span>Contact us</span>
-                    </DropdownMenuItem>
-                </DropdownMenuGroup>
-                <DropdownMenuSeparator />
-                <DropdownMenuItem>
-                    <LogOut className="mr-1" />
-                    <span>Log out</span>
-                </DropdownMenuItem>
-            </DropdownMenuContent>
-        </DropdownMenu>
-    ),
-};
-
-export const Menu: Story = {
+export const AvatarDropdown: Story = {
     render: () => (
         <DropdownMenu>
             <DropdownMenuTrigger asChild>
@@ -352,6 +322,63 @@ export const Menu: Story = {
                     >
                         <LogOut />
                         <span>Log out</span>
+                    </TextLink>
+                </DropdownMenuItem>
+            </DropdownMenuContent>
+        </DropdownMenu>
+    ),
+};
+
+export const ButtonDropdown: Story = {
+    render: () => (
+        <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+                <Button variant="accent">
+                    <Plus />
+                    Add
+                </Button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent align="center">
+                <DropdownMenuItem asChild>
+                    <TextLink size="sm" layout="dropdown" href="/">
+                        <StickyNote />
+                        <span>Card</span>
+                    </TextLink>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                    <TextLink size="sm" layout="dropdown" href="/">
+                        <Archive />
+                        <span>Deck</span>
+                    </TextLink>
+                </DropdownMenuItem>
+            </DropdownMenuContent>
+        </DropdownMenu>
+    ),
+};
+
+export const DeckDropdown: Story = {
+    render: () => (
+        <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+                <IconButton>
+                    <EllipsisVertical />
+                </IconButton>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent align="end">
+                <DropdownMenuItem asChild>
+                    <TextLink size="sm" layout="dropdown" href="/">
+                        <span>Edit deck</span>
+                    </TextLink>
+                </DropdownMenuItem>
+                <DropdownMenuSeparator />
+                <DropdownMenuItem asChild>
+                    <TextLink
+                        variant="destructive"
+                        size="sm"
+                        layout="dropdown"
+                        href="/"
+                    >
+                        <span>Delete deck</span>
                     </TextLink>
                 </DropdownMenuItem>
             </DropdownMenuContent>

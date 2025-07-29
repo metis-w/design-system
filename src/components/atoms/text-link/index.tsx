@@ -24,8 +24,7 @@ const textLinkVariants = cva(
             },
             layout: {
                 inline: "",
-                dropdown:
-                    "text-inherit hover:text-inherit no-underline hover:no-underline w-full",
+                dropdown: "no-underline hover:no-underline w-full",
             },
         },
         defaultVariants: {
