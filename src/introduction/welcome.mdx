@@ -1,0 +1,32 @@
+import { Meta } from "@storybook/addon-docs/blocks";
+
+<Meta title="Introduction/Welcome" />
+
+# Welcome to Metis Design System
+
+A React component library built with TypeScript, Tailwind CSS, and Radix UI.
+
+## Installation
+
+```bash
+npm install reserve-design-system
+```
+
+## Setup
+
+Add the design system styles to your project's main CSS file (usually `index.css` or `globals.css`):
+
+```css
+@source url("../node_modules/reserve-design-system/dist/reserve-design-system.css");
+@import "../node_modules/reserve-design-system/dist/reserve-design-system.css";
+```
+
+## Usage
+
+```tsx
+import { Button } from "reserve-design-system";
+
+function App() {
+    return <Button variant="accent">click me</Button>;
+}
+```

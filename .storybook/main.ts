@@ -3,12 +3,17 @@ import { resolve } from "path";
 
 const config: StorybookConfig = {
     stories: [
-        "../src/**/stories.@(js|jsx|mjs|ts|tsx)"
+        "../src/introduction/**/*.mdx",
+        "../src/**/stories.@(js|jsx|mjs|ts|tsx)",
     ],
-    addons: ["@storybook/addon-docs"],
+    staticDirs: ["./public"],
+    addons: ["@storybook/addon-docs", "@storybook/addon-onboarding"],
     framework: {
         name: "@storybook/react-vite",
         options: {},
+    },
+    docs: {
+        defaultName: "Documentation",
     },
     async viteFinal(config) {
         // Add alias support
