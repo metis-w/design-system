@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils";
 
-interface LoaderProps {
+interface Props {
     message?: string;
     size?: "sm" | "md" | "lg";
     className?: string;
@@ -18,7 +18,7 @@ export function Loader({
     size = "md",
     className,
     fullScreen = true,
-}: LoaderProps) {
+}: Props) {
     const content = (
         <div className="flex flex-col items-center gap-3">
             <div
