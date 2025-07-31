@@ -94,7 +94,7 @@ export const Readonly: Story = {
 export const PasswordExamples: Story = {
     render: () => (
         <div className="space-y-4 w-80">
-            <div className="space-y-2">
+            <div className="space-y-1">
                 <h3 className="typo-ui-title-sm text-text-pr">
                     Password Input Examples
                 </h3>
@@ -103,22 +103,18 @@ export const PasswordExamples: Story = {
                 </p>
             </div>
 
-            <div className="space-y-4">
-                <div className="space-y-2">
-                    <Label>
-                        Regular Password Input
-                    </Label>
-                    <Input
-                        type="password"
-                        placeholder="Enter password..."
-                        defaultValue="secretpassword"
-                    />
-                </div>
+            <div className="space-y-1">
+                <Label>Empty</Label>
+                <Input
+                    type="password"
+                    placeholder="Enter password..."
+                    showPasswordToggle={true}
+                />
+            </div>
 
-                <div className="space-y-2">
-                    <Label>
-                        Password Input with Placeholder
-                    </Label>
+            <div className="space-y-4">
+                <div className="space-y-1">
+                    <Label>Filled</Label>
                     <Input
                         type="password"
                         placeholder="Enter password..."
@@ -127,21 +123,8 @@ export const PasswordExamples: Story = {
                     />
                 </div>
 
-                <div className="space-y-2">
-                    <Label>
-                        Empty Password Input
-                    </Label>
-                    <Input
-                        type="password"
-                        placeholder="Enter password..."
-                        showPasswordToggle={true}
-                    />
-                </div>
-
-                <div className="space-y-2">
-                    <Label disabled>
-                        Disabled Password Input
-                    </Label>
+                <div className="space-y-1">
+                    <Label disabled>Disabled</Label>
                     <Input
                         type="password"
                         placeholder="Enter password..."
@@ -151,26 +134,11 @@ export const PasswordExamples: Story = {
                     />
                 </div>
 
-                <div className="space-y-2">
-                    <Label>
-                        Readonly Text Input
-                    </Label>
+                <div className="space-y-1">
+                    <Label>Readonly</Label>
                     <Input
                         placeholder="Readonly input"
                         defaultValue="This is readonly text"
-                        readOnly
-                    />
-                </div>
-
-                <div className="space-y-2">
-                    <Label>
-                        Readonly Password Input
-                    </Label>
-                    <Input
-                        type="password"
-                        placeholder="Enter password..."
-                        showPasswordToggle={true}
-                        defaultValue="secretpassword"
                         readOnly
                     />
                 </div>

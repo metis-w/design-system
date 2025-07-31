@@ -27,7 +27,9 @@ export function Loader({
                     sizeVariants[size]
                 )}
             />
-            {message && <p className="text-ui-label-sm text-text-ter">{message}</p>}
+            {message && (
+                <p className="typo-ui-label-sm text-text-ter">{message}</p>
+            )}
         </div>
     );
     if (fullScreen) {
