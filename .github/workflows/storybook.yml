@@ -20,12 +20,22 @@ jobs:
         with:
           node-version: '20'
           cache: 'npm'
+          registry-url: 'https://registry.npmjs.org'
 
       - name: Install dependencies
         run: npm ci
 
       - name: Build Storybook
         run: npm run build-storybook
+
+      - name: Build package
+        run: npm run build
+
+      - name: Publish to npm
+        run: npm publish
+        continue-on-error: true
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Create CNAME file
         run: echo "ds.metis.works" > storybook-static/CNAME

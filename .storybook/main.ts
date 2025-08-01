@@ -15,6 +15,12 @@ const config: StorybookConfig = {
     docs: {
         defaultName: "Documentation",
     },
+    managerHead: (head) => `
+        ${head}
+        <title>Metis - Storybook</title>
+        <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+        <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    `,
     async viteFinal(config) {
         // Add alias support
         config.resolve = config.resolve || {};
