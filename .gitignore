@@ -18,7 +18,7 @@ build/
 # IDE
 .vscode/
 .idea/
-.github/
+.github/prompts/
 *.swp
 *.swo
 

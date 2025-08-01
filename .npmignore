@@ -2,6 +2,16 @@
 src/
 public/
 
+# Storybook files
+.storybook/
+storybook-static/
+**/*.stories.ts
+**/*.stories.tsx
+**/stories.ts
+**/stories.tsx
+src/introduction/
+**/*.mdx
+
 # Development and build tools
 .storybook/
 storybook-static/
@@ -13,6 +23,7 @@ node_modules/
 vite.config.js
 vite.config.ts
 tsconfig.json
+tsconfig.build.json
 tsconfig.node.json
 postcss.config.js
 .eslintrc*
