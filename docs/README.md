@@ -13,13 +13,7 @@ npm install @metis-w/design-system
 Import the design system in your main CSS file:
 
 ```css
-@import "@metis-w/design-system";
-```
-
-Or import the individual CSS file:
-
-```css
-@import "@metis-w/design-system/index.css";
+@import "@metis-w/design-system/styles";
 ```
 
 ## What's Included
