@@ -29,7 +29,7 @@ export default defineConfig({
             },
         },
         cssCodeSplit: false,
-        outDir: "dist",
+        outDir: "build",
     },
     css: {
         postcss: "./postcss.config.js",

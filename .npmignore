@@ -30,11 +30,6 @@ postcss.config.js
 .prettierrc*
 .gitignore
 
-# Documentation and project files
-README.md
-*.md
-docs/
-
 # Test files
 **/*.test.*
 **/*.spec.*
