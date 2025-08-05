@@ -1,8 +1,8 @@
 import * as React from "react";
 import { Eye, EyeOff } from "lucide-react";
-import { cva, type VariantProps } from "class-variance-authority";
 
 import { cn } from "@/lib/utils";
+import { cva, type VariantProps } from "class-variance-authority";
 
 const inputVariants = cva(
     "flex h-10 w-full rounded-lg border px-4 py-3 typo-ui-body-sm bg-bg-inp border-border-inp text-text-inp-filled shadow-xs placeholder:text-text-inp placeholder:font-medium transition-all duration-300 ease-in-out outline-none focus:border-border-inp-focus focus:ring-2 focus:ring-ring-inp-focus focus:shadow-none disabled:bg-bg-inp-disabled disabled:text-text-inp-disabled disabled:cursor-not-allowed read-only:bg-bg-inp-readonly read-only:text-text-inp-readonly read-only:border-border-inp-readonly read-only:focus:ring-0 aria-invalid:ring-ring-inp-mistake aria-invalid:border-border-inp-mistake aria-invalid:bg-bg-inp-mistake autofill:bg-bg-inp autofill:text-text-inp-filled autofill:shadow-[inset_0_0_0px_1000px_var(--color-bg-inp)]",

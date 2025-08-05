@@ -2,7 +2,6 @@
 
 import * as React from "react";
 import { useMedia } from "react-use";
-
 import {
     Modal,
     ModalClose,
@@ -13,8 +12,7 @@ import {
     ModalTitle,
     ModalTrigger,
     ModalBody,
-} from "../../molecules/modal";
-
+} from "@/components/molecules";
 import {
     Drawer,
     DrawerClose,
@@ -24,7 +22,7 @@ import {
     DrawerHeader,
     DrawerTitle,
     DrawerTrigger,
-} from "../../molecules/drawer";
+} from "@/components/molecules";
 
 const DialogContext = React.createContext<boolean>(false);
 
@@ -45,7 +43,7 @@ const AdaptiveDialog = ({
     onOpenChange,
     defaultOpen = false,
 }: Props) => {
-    const isDesktop = useMedia("(min-width: 768px)");
+    const isDesktop = useMedia("(min-width: 640px)");
     const [internalOpen, setInternalOpen] = React.useState(defaultOpen);
     const isOpen = open ?? internalOpen;
 

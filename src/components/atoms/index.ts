@@ -3,6 +3,7 @@ export * from "./container";
 export * from "./button";
 export * from "./label";
 export * from "./avatar";
+export * from "./badge";
 export * from "./select";
 export * from "./loader";
 export * from "./skeleton";

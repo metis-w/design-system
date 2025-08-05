@@ -1,9 +1,7 @@
-import type { Meta, StoryObj } from "@storybook/react";
 import { useState } from "react";
-import { Button } from "../../atoms/button";
-import { IconButton } from "../../atoms/icon-button";
-import { Input } from "../../atoms/input";
-import { Label } from "../../atoms/label";
+
+import type { Meta, StoryObj } from "@storybook/react";
+
 import {
     AdaptiveDialog,
     AdaptiveDialogClose,
@@ -15,6 +13,7 @@ import {
     AdaptiveDialogTrigger,
     AdaptiveDialogBody,
 } from ".";
+import { Button, IconButton, Input, Label } from "@/components/atoms";
 import { X, Settings, User, AlertTriangle, CheckCircle } from "lucide-react";
 
 const meta: Meta = {

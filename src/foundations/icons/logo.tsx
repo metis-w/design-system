@@ -1,11 +1,11 @@
 import * as React from "react";
+
 import { cn } from "@/lib/utils";
 
-interface Props extends React.SVGProps<SVGSVGElement> {
-    className?: string;
-}
-
-export function Logo({ className, ...props }: Props) {
+function Logo({
+    className,
+    ...props
+}: React.SVGProps<SVGSVGElement> & { className?: string }) {
     return (
         <svg
             width="32"
@@ -128,3 +128,5 @@ export function Logo({ className, ...props }: Props) {
         </svg>
     );
 }
+
+export { Logo };

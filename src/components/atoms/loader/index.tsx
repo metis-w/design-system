@@ -1,5 +1,5 @@
-import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
+import { cva, type VariantProps } from "class-variance-authority";
 
 const loaderVariants = cva("flex items-center justify-center", {
     variants: {
@@ -34,11 +34,10 @@ function Loader({
     size,
     className,
     fullScreen,
-}: VariantProps<typeof loaderVariants> &
-    VariantProps<typeof spinnerVariants> & {
-        message?: string;
-        className?: string;
-    }) {
+}: VariantProps<typeof loaderVariants> & VariantProps<typeof spinnerVariants> & {
+    message?: string;
+    className?: string;
+}) {
     return (
         <div className={cn(loaderVariants({ fullScreen }), className)}>
             <div className="flex flex-col items-center gap-3">
