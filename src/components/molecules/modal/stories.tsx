@@ -1,10 +1,8 @@
-import type { Meta, StoryObj } from "@storybook/react";
 import { useState } from "react";
-import { Button } from "../../atoms/button";
-import { IconButton } from "../../atoms/icon-button";
-import { Input } from "../../atoms/input";
-import { Label } from "../../atoms/label";
-import { 
+
+import type { Meta, StoryObj } from "@storybook/react";
+
+import {
     Modal,
     ModalClose,
     ModalContent,
@@ -15,7 +13,16 @@ import {
     ModalTrigger,
     ModalBody,
 } from ".";
-import { X, AlertTriangle, Info, CheckCircle, Trash2, Settings, User } from "lucide-react";
+import {
+    X,
+    AlertTriangle,
+    Info,
+    CheckCircle,
+    Trash2,
+    Settings,
+    User,
+} from "lucide-react";
+import { Button, Input, Label, IconButton } from "@/components/atoms/";
 
 const meta = {
     title: "Components/Molecules/Modal",
@@ -39,13 +46,14 @@ export const Default: Story = {
                 <ModalHeader>
                     <ModalTitle>Default Modal</ModalTitle>
                     <ModalDescription>
-                        This is a simple modal with basic content. You can add any information here.
+                        This is a simple modal with basic content. You can add
+                        any information here.
                     </ModalDescription>
                 </ModalHeader>
                 <ModalBody>
                     <p className="typo-ui-body-base text-text-pr">
-                        Modal content goes here. You can add any content you need, including forms, 
-                        images, or other components.
+                        Modal content goes here. You can add any content you
+                        need, including forms, images, or other components.
                     </p>
                 </ModalBody>
                 <ModalFooter>
@@ -78,7 +86,8 @@ export const WithForm: Story = {
                             <div>
                                 <ModalTitle>Create New User</ModalTitle>
                                 <ModalDescription>
-                                    Fill in the information below to create a new user account.
+                                    Fill in the information below to create a
+                                    new user account.
                                 </ModalDescription>
                             </div>
                             <ModalClose asChild>
@@ -157,8 +166,9 @@ export const ConfirmationDialog: Story = {
                 </ModalHeader>
                 <ModalBody>
                     <p className="typo-ui-body-base text-text-pr">
-                        Are you sure you want to delete this item? This will permanently remove 
-                        it from your account and cannot be recovered.
+                        Are you sure you want to delete this item? This will
+                        permanently remove it from your account and cannot be
+                        recovered.
                     </p>
                 </ModalBody>
                 <ModalFooter>
@@ -198,8 +208,9 @@ export const InfoDialog: Story = {
                 <ModalBody>
                     <div className="space-y-3">
                         <p className="typo-ui-body-base text-text-pr">
-                            This is an informational dialog that provides important details 
-                            about the current operation or system status.
+                            This is an informational dialog that provides
+                            important details about the current operation or
+                            system status.
                         </p>
                         <ul className="space-y-1 text-text-sec typo-ui-body-sm">
                             <li>• Feature updates are applied automatically</li>
@@ -243,8 +254,8 @@ export const SuccessDialog: Story = {
                 </ModalHeader>
                 <ModalBody>
                     <p className="typo-ui-body-base text-text-pr">
-                        The operation has been completed successfully. You can now continue 
-                        with your workflow.
+                        The operation has been completed successfully. You can
+                        now continue with your workflow.
                     </p>
                 </ModalBody>
                 <ModalFooter>
@@ -272,7 +283,8 @@ export const SettingsModal: Story = {
                         <div>
                             <ModalTitle>Application Settings</ModalTitle>
                             <ModalDescription>
-                                Manage your application preferences and configuration.
+                                Manage your application preferences and
+                                configuration.
                             </ModalDescription>
                         </div>
                         <ModalClose asChild>
@@ -285,40 +297,75 @@ export const SettingsModal: Story = {
                 <ModalBody>
                     <div className="space-y-6">
                         <div className="space-y-3">
-                            <h4 className="typo-ui-label-lg text-text-pr">Notifications</h4>
+                            <h4 className="typo-ui-label-lg text-text-pr">
+                                Notifications
+                            </h4>
                             <div className="space-y-2">
                                 <label className="flex items-center space-x-3">
-                                    <input type="checkbox" defaultChecked className="rounded" />
+                                    <input
+                                        type="checkbox"
+                                        defaultChecked
+                                        className="rounded"
+                                    />
                                     <div>
-                                        <span className="typo-ui-body-base text-text-pr">Email notifications</span>
-                                        <p className="typo-ui-body-sm text-text-sec">Receive updates via email</p>
+                                        <span className="typo-ui-body-base text-text-pr">
+                                            Email notifications
+                                        </span>
+                                        <p className="typo-ui-body-sm text-text-sec">
+                                            Receive updates via email
+                                        </p>
                                     </div>
                                 </label>
                                 <label className="flex items-center space-x-3">
-                                    <input type="checkbox" className="rounded" />
+                                    <input
+                                        type="checkbox"
+                                        className="rounded"
+                                    />
                                     <div>
-                                        <span className="typo-ui-body-base text-text-pr">Push notifications</span>
-                                        <p className="typo-ui-body-sm text-text-sec">Get instant push notifications</p>
+                                        <span className="typo-ui-body-base text-text-pr">
+                                            Push notifications
+                                        </span>
+                                        <p className="typo-ui-body-sm text-text-sec">
+                                            Get instant push notifications
+                                        </p>
                                     </div>
                                 </label>
                             </div>
                         </div>
-                        
+
                         <div className="space-y-3">
-                            <h4 className="typo-ui-label-lg text-text-pr">Privacy</h4>
+                            <h4 className="typo-ui-label-lg text-text-pr">
+                                Privacy
+                            </h4>
                             <div className="space-y-2">
                                 <label className="flex items-center space-x-3">
-                                    <input type="checkbox" defaultChecked className="rounded" />
+                                    <input
+                                        type="checkbox"
+                                        defaultChecked
+                                        className="rounded"
+                                    />
                                     <div>
-                                        <span className="typo-ui-body-base text-text-pr">Profile visibility</span>
-                                        <p className="typo-ui-body-sm text-text-sec">Make your profile visible to others</p>
+                                        <span className="typo-ui-body-base text-text-pr">
+                                            Profile visibility
+                                        </span>
+                                        <p className="typo-ui-body-sm text-text-sec">
+                                            Make your profile visible to others
+                                        </p>
                                     </div>
                                 </label>
                                 <label className="flex items-center space-x-3">
-                                    <input type="checkbox" defaultChecked className="rounded" />
+                                    <input
+                                        type="checkbox"
+                                        defaultChecked
+                                        className="rounded"
+                                    />
                                     <div>
-                                        <span className="typo-ui-body-base text-text-pr">Activity status</span>
-                                        <p className="typo-ui-body-sm text-text-sec">Show when you're online</p>
+                                        <span className="typo-ui-body-base text-text-pr">
+                                            Activity status
+                                        </span>
+                                        <p className="typo-ui-body-sm text-text-sec">
+                                            Show when you're online
+                                        </p>
                                     </div>
                                 </label>
                             </div>
@@ -346,10 +393,14 @@ export const DifferentSizes: Story = {
                 <ModalContent size="sm">
                     <ModalHeader>
                         <ModalTitle>Small Modal</ModalTitle>
-                        <ModalDescription>This is a small modal window.</ModalDescription>
+                        <ModalDescription>
+                            This is a small modal window.
+                        </ModalDescription>
                     </ModalHeader>
                     <ModalBody>
-                        <p className="typo-ui-body-sm text-text-pr">Compact content for quick actions.</p>
+                        <p className="typo-ui-body-sm text-text-pr">
+                            Compact content for quick actions.
+                        </p>
                     </ModalBody>
                     <ModalFooter>
                         <ModalClose asChild>
@@ -366,7 +417,9 @@ export const DifferentSizes: Story = {
                 <ModalContent size="md">
                     <ModalHeader>
                         <ModalTitle>Medium Modal</ModalTitle>
-                        <ModalDescription>This is a medium-sized modal window.</ModalDescription>
+                        <ModalDescription>
+                            This is a medium-sized modal window.
+                        </ModalDescription>
                     </ModalHeader>
                     <ModalBody>
                         <p className="typo-ui-body-base text-text-pr">
@@ -388,7 +441,9 @@ export const DifferentSizes: Story = {
                 <ModalContent size="lg">
                     <ModalHeader>
                         <ModalTitle>Large Modal</ModalTitle>
-                        <ModalDescription>This is a large modal window.</ModalDescription>
+                        <ModalDescription>
+                            This is a large modal window.
+                        </ModalDescription>
                     </ModalHeader>
                     <ModalBody>
                         <p className="typo-ui-body-base text-text-pr">
@@ -410,11 +465,14 @@ export const DifferentSizes: Story = {
                 <ModalContent size="xl">
                     <ModalHeader>
                         <ModalTitle>Extra Large Modal</ModalTitle>
-                        <ModalDescription>This is an extra large modal window.</ModalDescription>
+                        <ModalDescription>
+                            This is an extra large modal window.
+                        </ModalDescription>
                     </ModalHeader>
                     <ModalBody>
                         <p className="typo-ui-body-base text-text-pr">
-                            Extra large size for extensive content, settings panels, or data tables.
+                            Extra large size for extensive content, settings
+                            panels, or data tables.
                         </p>
                     </ModalBody>
                     <ModalFooter>

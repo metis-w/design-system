@@ -1,4 +1,7 @@
+import { useState } from "react";
+
 import type { Meta, StoryObj } from "@storybook/react";
+
 import {
     DropdownMenu,
     DropdownMenuContent,
@@ -14,10 +17,6 @@ import {
     DropdownMenuSubTrigger,
     DropdownMenuShortcut,
 } from ".";
-import { Button } from "../../atoms/button";
-import { TextLink } from "../../atoms/text-link";
-import { IconButton } from "../../atoms/icon-button";
-import { Avatar, AvatarFallback } from "../../atoms/avatar";
 import {
     User,
     Settings,
@@ -34,7 +33,13 @@ import {
     MessageCircleHeart,
     EllipsisVertical,
 } from "lucide-react";
-import { useState } from "react";
+import {
+    Button,
+    TextLink,
+    IconButton,
+    Avatar,
+    AvatarFallback,
+} from "@/components/atoms";
 
 const meta = {
     title: "Components/Molecules/DropdownMenu",

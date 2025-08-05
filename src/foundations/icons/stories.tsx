@@ -1,8 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { Logo } from "./logo";
-import { LogoExt } from "./logo-ext";
-import { Google } from "./google";
-import { Button } from "../../components/atoms/button";
+
+import { Logo, LogoExt, Google } from ".";
+import { Button } from "@/components/atoms";
 
 const meta = {
     title: "Foundations/Icons",

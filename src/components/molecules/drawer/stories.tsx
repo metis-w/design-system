@@ -1,9 +1,7 @@
-import type { Meta, StoryObj } from "@storybook/react";
 import { useState } from "react";
-import { Button } from "../../atoms/button";
-import { IconButton } from "../../atoms/icon-button";
-import { Input } from "../../atoms/input";
-import { Label } from "../../atoms/label";
+
+import type { Meta, StoryObj } from "@storybook/react";
+
 import {
     Drawer,
     DrawerClose,
@@ -15,6 +13,7 @@ import {
     DrawerTrigger,
 } from ".";
 import { X, Settings, Plus, User } from "lucide-react";
+import { Input, Label, Button, IconButton } from "@/components/atoms";
 
 const meta = {
     title: "Components/Molecules/Drawer",

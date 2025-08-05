@@ -1,8 +1,11 @@
-import type { Meta, StoryObj } from "@storybook/react";
-import React from "react";
+import * as z from "zod";
+
+import { useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import * as z from "zod";
+
+import type { Meta, StoryObj } from "@storybook/react";
+
 import {
     Form,
     FormControl,
@@ -12,10 +15,14 @@ import {
     FormLabel,
     FormMessage,
 } from ".";
-import { Input } from "../../atoms/input";
-import { Button } from "../../atoms/button";
-import { TextArea } from "../../atoms/text-area";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "../../atoms/select";
+import {
+    Select,
+    SelectContent,
+    SelectItem,
+    SelectTrigger,
+    SelectValue,
+} from "@/components/atoms";
+import { Input, Button, TextArea } from "@/components/atoms";
 
 const meta = {
     title: "Components/Molecules/Form",
@@ -65,7 +72,10 @@ export const Default: Story = {
         return (
             <div className="w-96 space-y-6">
                 <Form {...form}>
-                    <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
+                    <form
+                        onSubmit={form.handleSubmit(onSubmit)}
+                        className="space-y-4"
+                    >
                         <FormField
                             control={form.control}
                             name="username"
@@ -73,7 +83,10 @@ export const Default: Story = {
                                 <FormItem>
                                     <FormLabel>Username</FormLabel>
                                     <FormControl>
-                                        <Input placeholder="Enter your username" {...field} />
+                                        <Input
+                                            placeholder="Enter your username"
+                                            {...field}
+                                        />
                                     </FormControl>
                                     <FormDescription>
                                         This is your public display name.
@@ -89,10 +102,15 @@ export const Default: Story = {
                                 <FormItem>
                                     <FormLabel>Email</FormLabel>
                                     <FormControl>
-                                        <Input type="email" placeholder="Enter your email" {...field} />
+                                        <Input
+                                            type="email"
+                                            placeholder="Enter your email"
+                                            {...field}
+                                        />
                                     </FormControl>
                                     <FormDescription>
-                                        We'll never share your email with anyone.
+                                        We'll never share your email with
+                                        anyone.
                                     </FormDescription>
                                     <FormMessage />
                                 </FormItem>
@@ -105,16 +123,26 @@ export const Default: Story = {
                                 <FormItem>
                                     <FormLabel>Password</FormLabel>
                                     <FormControl>
-                                        <Input type="password" showPasswordToggle placeholder="Enter your password" {...field} />
+                                        <Input
+                                            type="password"
+                                            showPasswordToggle
+                                            placeholder="Enter your password"
+                                            {...field}
+                                        />
                                     </FormControl>
                                     <FormDescription>
-                                        Password must be at least 8 characters long.
+                                        Password must be at least 8 characters
+                                        long.
                                     </FormDescription>
                                     <FormMessage />
                                 </FormItem>
                             )}
                         />
-                        <Button type="submit" variant="primary" className="w-full">
+                        <Button
+                            type="submit"
+                            variant="primary"
+                            className="w-full"
+                        >
                             Submit
                         </Button>
                     </form>
@@ -146,7 +174,10 @@ export const WithTextarea: Story = {
         return (
             <div className="w-96">
                 <Form {...form}>
-                    <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
+                    <form
+                        onSubmit={form.handleSubmit(onSubmit)}
+                        className="space-y-4"
+                    >
                         <FormField
                             control={form.control}
                             name="bio"
@@ -195,7 +226,10 @@ export const WithSelect: Story = {
         return (
             <div className="w-96">
                 <Form {...form}>
-                    <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
+                    <form
+                        onSubmit={form.handleSubmit(onSubmit)}
+                        className="space-y-4"
+                    >
                         <FormField
                             control={form.control}
                             name="role"
@@ -203,14 +237,23 @@ export const WithSelect: Story = {
                                 <FormItem>
                                     <FormLabel>Role</FormLabel>
                                     <FormControl>
-                                        <Select onValueChange={field.onChange} value={field.value}>
+                                        <Select
+                                            onValueChange={field.onChange}
+                                            value={field.value}
+                                        >
                                             <SelectTrigger>
                                                 <SelectValue placeholder="Select a role" />
                                             </SelectTrigger>
                                             <SelectContent>
-                                                <SelectItem value="admin">Admin</SelectItem>
-                                                <SelectItem value="user">User</SelectItem>
-                                                <SelectItem value="moderator">Moderator</SelectItem>
+                                                <SelectItem value="admin">
+                                                    Admin
+                                                </SelectItem>
+                                                <SelectItem value="user">
+                                                    User
+                                                </SelectItem>
+                                                <SelectItem value="moderator">
+                                                    Moderator
+                                                </SelectItem>
                                             </SelectContent>
                                         </Select>
                                     </FormControl>
@@ -242,9 +285,7 @@ export const WithErrors: Story = {
                 bio: "short",
             },
         });
-
-        // Trigger validation errors
-        React.useEffect(() => {
+        useEffect(() => {
             form.trigger();
         }, [form]);
 
@@ -255,7 +296,10 @@ export const WithErrors: Story = {
         return (
             <div className="w-96 space-y-6">
                 <Form {...form}>
-                    <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
+                    <form
+                        onSubmit={form.handleSubmit(onSubmit)}
+                        className="space-y-4"
+                    >
                         <FormField
                             control={form.control}
                             name="username"
@@ -263,7 +307,10 @@ export const WithErrors: Story = {
                                 <FormItem>
                                     <FormLabel>Username</FormLabel>
                                     <FormControl>
-                                        <Input placeholder="Enter your username" {...field} />
+                                        <Input
+                                            placeholder="Enter your username"
+                                            {...field}
+                                        />
                                     </FormControl>
                                     <FormDescription>
                                         This is your public display name.
@@ -279,10 +326,15 @@ export const WithErrors: Story = {
                                 <FormItem>
                                     <FormLabel>Email</FormLabel>
                                     <FormControl>
-                                        <Input type="email" placeholder="Enter your email" {...field} />
+                                        <Input
+                                            type="email"
+                                            placeholder="Enter your email"
+                                            {...field}
+                                        />
                                     </FormControl>
                                     <FormDescription>
-                                        We'll never share your email with anyone.
+                                        We'll never share your email with
+                                        anyone.
                                     </FormDescription>
                                     <FormMessage />
                                 </FormItem>
@@ -295,10 +347,15 @@ export const WithErrors: Story = {
                                 <FormItem>
                                     <FormLabel>Password</FormLabel>
                                     <FormControl>
-                                        <Input type="password" placeholder="Enter your password" {...field} />
+                                        <Input
+                                            type="password"
+                                            placeholder="Enter your password"
+                                            {...field}
+                                        />
                                     </FormControl>
                                     <FormDescription>
-                                        Password must be at least 8 characters long.
+                                        Password must be at least 8 characters
+                                        long.
                                     </FormDescription>
                                     <FormMessage />
                                 </FormItem>
@@ -311,7 +368,10 @@ export const WithErrors: Story = {
                                 <FormItem>
                                     <FormLabel>Bio</FormLabel>
                                     <FormControl>
-                                        <TextArea placeholder="Tell us about yourself..." {...field} />
+                                        <TextArea
+                                            placeholder="Tell us about yourself..."
+                                            {...field}
+                                        />
                                     </FormControl>
                                     <FormDescription>
                                         Write a short bio about yourself.
@@ -320,7 +380,11 @@ export const WithErrors: Story = {
                                 </FormItem>
                             )}
                         />
-                        <Button type="submit" variant="primary" className="w-full">
+                        <Button
+                            type="submit"
+                            variant="primary"
+                            className="w-full"
+                        >
                             Submit
                         </Button>
                     </form>
@@ -356,13 +420,18 @@ export const LoginForm: Story = {
         return (
             <div className="w-96">
                 <div className="text-center mb-6">
-                    <h2 className="text-ui-title-base text-text-pr">Sign in to your account</h2>
+                    <h2 className="text-ui-title-base text-text-pr">
+                        Sign in to your account
+                    </h2>
                     <p className="text-ui-body-sm text-text-sec mt-2">
                         Enter your credentials to access your account
                     </p>
                 </div>
                 <Form {...form}>
-                    <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
+                    <form
+                        onSubmit={form.handleSubmit(onSubmit)}
+                        className="space-y-4"
+                    >
                         <FormField
                             control={form.control}
                             name="email"
@@ -370,7 +439,11 @@ export const LoginForm: Story = {
                                 <FormItem>
                                     <FormLabel>Email</FormLabel>
                                     <FormControl>
-                                        <Input type="email" placeholder="name@example.com" {...field} />
+                                        <Input
+                                            type="email"
+                                            placeholder="name@example.com"
+                                            {...field}
+                                        />
                                     </FormControl>
                                     <FormMessage />
                                 </FormItem>
@@ -383,18 +456,30 @@ export const LoginForm: Story = {
                                 <FormItem>
                                     <FormLabel>Password</FormLabel>
                                     <FormControl>
-                                        <Input type="password" placeholder="••••••••" {...field} />
+                                        <Input
+                                            type="password"
+                                            placeholder="••••••••"
+                                            {...field}
+                                        />
                                     </FormControl>
                                     <FormMessage />
                                 </FormItem>
                             )}
                         />
                         <div className="flex items-center justify-between">
-                            <Button variant="ghost" type="button" className="h-auto p-0 text-ui-body-sm">
+                            <Button
+                                variant="ghost"
+                                type="button"
+                                className="h-auto p-0 text-ui-body-sm"
+                            >
                                 Forgot password?
                             </Button>
                         </div>
-                        <Button type="submit" variant="primary" className="w-full">
+                        <Button
+                            type="submit"
+                            variant="primary"
+                            className="w-full"
+                        >
                             Sign in
                         </Button>
                     </form>

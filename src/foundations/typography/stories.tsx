@@ -14,7 +14,6 @@ type Story = StoryObj;
 export const AllTypography: Story = {
     render: () => (
         <div className="space-y-8">
-            {/* Titles */}
             <div className="space-y-4">
                 <h2 className="text-ui-title-base text-text-pr border-b border-border-default pb-2">
                     Titles
@@ -50,7 +49,6 @@ export const AllTypography: Story = {
                 </div>
             </div>
 
-            {/* Subtitle */}
             <div className="space-y-4">
                 <h2 className="text-ui-title-base text-text-pr border-b border-border-default pb-2">
                     Subtitle
@@ -66,7 +64,6 @@ export const AllTypography: Story = {
                 </div>
             </div>
 
-            {/* Body Text */}
             <div className="space-y-4">
                 <h2 className="text-ui-title-base text-text-pr border-b border-border-default pb-2">
                     Body Text
@@ -108,7 +105,6 @@ export const AllTypography: Story = {
                 </div>
             </div>
 
-            {/* Labels */}
             <div className="space-y-4">
                 <h2 className="text-ui-title-base text-text-pr border-b border-border-default pb-2">
                     Labels

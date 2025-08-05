@@ -1,13 +1,11 @@
 import type { Meta, StoryObj } from "@storybook/react";
+
 import {
     Select,
     SelectContent,
     SelectItem,
     SelectTrigger,
     SelectValue,
-    SelectLabel,
-    SelectSeparator,
-    SelectGroup,
 } from ".";
 
 const meta = {

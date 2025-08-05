@@ -1,11 +1,13 @@
 import * as React from "react";
+
 import { cn } from "@/lib/utils";
 
-interface Props extends React.SVGProps<SVGSVGElement> {
+function Google({
+    className,
+    ...props
+}: React.SVGProps<SVGSVGElement> & {
     className?: string;
-}
-
-export function Google({ className, ...props }: Props) {
+}) {
     return (
         <svg
             width="24"
@@ -35,3 +37,5 @@ export function Google({ className, ...props }: Props) {
         </svg>
     );
 }
+
+export { Google };

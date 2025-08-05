@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
+
 import { TextArea } from ".";
-import { Label } from "../label";
-import { Input } from "../input";
+import { Label, Input } from "@/components/atoms";
 
 const meta = {
     title: "Components/Atoms/TextArea",

@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { Globe, Home, ArrowRight } from "lucide-react";
+
 import { TextLink } from ".";
+import { Globe, Home, ArrowRight } from "lucide-react";
 
 const meta = {
     title: "Components/Atoms/TextLink",
