@@ -24,7 +24,7 @@ const meta: Meta = {
         docs: {
             description: {
                 component:
-                    "Adaptive dialog that shows as a Modal on desktop (≥768px) and Drawer on mobile. Resize your screen to see the behavior change.",
+                    "Adaptive dialog that shows as a Modal on desktop (&ge;640px) and Drawer on mobile. Resize your screen to see the behavior change.",
             },
         },
     },
@@ -349,7 +349,7 @@ export const ResponsiveDemo: Story = {
                     <div className="flex items-center gap-2">
                         <span className="w-2 h-2 bg-green-500 rounded-full"></span>
                         <span className="text-text-pr">
-                            ≥768px: Modal (center-screen)
+                            &ge;768px: Modal (center-screen)
                         </span>
                     </div>
                     <div className="flex items-center gap-2">
@@ -381,10 +381,10 @@ export const ResponsiveDemo: Story = {
                                 Current behavior:
                             </p>
                             <div className="p-3 bg-surf-sec rounded typo-ui-body-sm text-text-sec">
-                                On desktop (≥768px): Shows as a centered modal
+                                On desktop (&ge;640px): Shows as a centered modal
                                 with backdrop
                                 <br />
-                                On mobile (&lt;768px): Shows as a bottom drawer
+                                On mobile (&lt;640px): Shows as a bottom drawer
                                 that slides up
                             </div>
                         </div>
