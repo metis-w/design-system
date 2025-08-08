@@ -47,22 +47,17 @@ function DeckCardContent({
     return (
         <div
             data-slot="deck-card-content"
-            className={cn(
-                "flex flex-col gap-4 p-3",
-                className
-            )}
+            className={cn("flex flex-col gap-4 p-3", className)}
             {...props}
         >
-            <div className="flex gap-3">
+            <div className="flex">
                 <div className="flex flex-col gap-1 flex-1">
                     <h3 className="text-text-pr typo-ui-title-sm">{title}</h3>
                     <p className="text-text-ter typo-ui-label-base">
                         {description}
                     </p>
                 </div>
-                <div className="flex flex-col items-end gap-[9px]">
-                    {children}
-                </div>
+                <div className="flex flex-col items-end">{children}</div>
             </div>
             <div className="flex flex-col gap-2">
                 <div className="flex justify-between items-center">
@@ -130,17 +125,25 @@ function DeckCardFooter({
         <div
             data-slot="deck-card-footer"
             className={cn(
-                "flex p-3 self-stretch",
+                "flex p-3 self-stretch border-t border-border-default",
                 "flex-col items-start gap-2",
                 "sm:flex-row sm:justify-between sm:items-center",
                 className
             )}
             {...props}
         >
-            <Button variant="primary" onClick={onStudy} className="w-full sm:w-auto sm:order-2">
+            <Button
+                variant="primary"
+                onClick={onStudy}
+                className="w-full sm:w-auto sm:order-2"
+            >
                 Study now
             </Button>
-            <Button variant="secondary" onClick={onAddCard} className="w-full sm:w-auto sm:order-1">
+            <Button
+                variant="secondary"
+                onClick={onAddCard}
+                className="w-full sm:w-auto sm:order-1"
+            >
                 <Plus className="size-4" />
                 Add card
             </Button>
